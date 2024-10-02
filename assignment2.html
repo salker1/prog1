@@ -9,8 +9,20 @@
             margin: 0;
             padding: 0;
             width: 100%;
+            height: 100%;
             font-family: Verdana, sans-serif;
             background-color: #e6f7e9;
+            display: flex;
+            justify-content: center; /* Centers the page content horizontally */
+            align-items: center; /* Centers the page content vertically */
+        }
+
+        main {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         header {
@@ -45,6 +57,16 @@
             color: #333;
         }
 
+        h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -52,6 +74,17 @@
 
         ul li {
             margin: 10px 0;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        ul li::before {
+            content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Noun_Project_bullet_point_icon.svg/2048px-Noun_Project_bullet_point_icon.svg.png');
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
         }
 
         ul li a {
@@ -79,43 +112,53 @@
 </head>
 <body>
 
-    <header>
-        <h3>Websites about Protected Areas Issues</h3>
-    </header>
+    <!-- HTML Comment: Sedra Alkero, Student ID: #301469062 -->
+    
+    <main>
+        <header>
+            <h3>Websites about Protected Areas Issues</h3>
+        </header>
 
-    <section>
-        <p>
-            Many species and the health of our ecosystems rely on protected areas for survival. These areas provide secure environments where wildlife can live and thrive, shielded from the impacts of human activity and population growth. Deforestation, pollution, and climate change are rapidly altering natural ecosystems, but protected areas help buffer these environments from such threats. They also store carbon, aiding in the fight against climate change, while playing a crucial role in preserving water sources and biodiversity. The links below highlight the importance of protected areas and the various methods being used worldwide to preserve them for future generations.
-        </p>
+        <section>
+            <hr>
+            <p>
+                Many species and the health of our ecosystems rely on protected areas for survival. These areas provide secure environments where wildlife can live and thrive, shielded from the impacts of human activity and population growth. Deforestation, pollution, and climate change are rapidly altering natural ecosystems, but protected areas help buffer these environments from such threats. They also store carbon, aiding in the fight against climate change, while playing a crucial role in preserving water sources and biodiversity. The links below highlight the importance of protected areas and the various methods being used worldwide to preserve them for future generations.
+            </p>
+            <hr>
+            <h2>Click links to visit websites covering related issues & strategies:</h2>
+            <ul>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/wcs-logo.png?raw=true" alt="WCS Logo" width="50">
+                    <a href="https://www.wcs.org/our-work/solutions/protected-areas" target="_blank">WCS: Protected Areas</a>
+                </li>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/ontario-nature-logo.jpg?raw=true" alt="Ontario Nature Logo" width="50">
+                    <a href="https://ontarionature.org/programs/nature-reserves/" target="_blank">Ontario Nature: Nature Reserves</a>
+                </li>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/iucn-logo.png?raw=true" alt="IUCN Logo" width="50">
+                    <a href="https://iucn.org/our-work/topic/effective-protected-areas" target="_blank">IUCN: Effective Protected Areas</a>
+                </li>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/natgeo-logo.jpg?raw=true" alt="National Geographic Logo" width="50">
+                    <a href="https://education.nationalgeographic.org/resource/how-wildlife-bouncing-back-african-park/" target="_blank">National Geographic: Wildlife in African Parks</a>
+                </li>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/protected-planet-logo.png?raw=true" alt="Protected Planet Logo" width="50">
+                    <a href="https://www.protectedplanet.net/en" target="_blank">Protected Planet: WDPA</a>
+                </li>
+                <li>
+                    <img src="https://github.com/salker1/prog1/blob/main/conservation-international-logo.png?raw=true" alt="Conservation International Logo" width="50">
+                    <a href="https://www.conservation.org/projects/paddd-protected-area-downgrading-downsizing-and-degazettement" target="_blank">Conservation International: PADD</a>
+                </li>
+            </ul>
+        </section>
 
-        <h2>Click links to visit websites covering related issues & strategies:</h2>
-        <ul>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/wcs-logo.png?raw=true" alt="WCS Logo" width="50">
-                <a href="https://www.wcs.org/our-work/solutions/protected-areas" target="_blank">WCS: Protected Areas</a>
-            </li>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/ontario-nature-logo.jpg?raw=true" alt="Ontario Nature Logo" width="50">
-                <a href="https://ontarionature.org/programs/nature-reserves/" target="_blank">Ontario Nature: Nature Reserves</a>
-            </li>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/iucn-logo.png?raw=true" alt="IUCN Logo" width="50">
-                <a href="https://iucn.org/our-work/topic/effective-protected-areas" target="_blank">IUCN: Effective Protected Areas</a>
-            </li>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/natgeo-logo.jpg?raw=true" alt="National Geographic Logo" width="50">
-                <a href="https://education.nationalgeographic.org/resource/how-wildlife-bouncing-back-african-park/" target="_blank">National Geographic: Wildlife in African Parks</a>
-            </li>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/protected-planet-logo.png?raw=true" alt="Protected Planet Logo" width="50">
-                <a href="https://www.protectedplanet.net/en" target="_blank">Protected Planet: WDPA</a>
-            </li>
-            <li>
-                <img src="https://github.com/salker1/prog1/blob/main/conservation-international-logo.png?raw=true" alt="Conservation International Logo" width="50">
-                <a href="https://www.conservation.org/projects/paddd-protected-area-downgrading-downsizing-and-degazettement" target="_blank">Conservation International: PADD</a>
-            </li>
-        </ul>
-    </section>
+        <footer>
+            <p>©Copyright Sedra Alkero | Fall 2024 Semester | Assignment #2 | COMP213 - Section 401 | Student ID: #301469062</p>
+            <p>Image and information credits: WCS, Ontario Nature, IUCN, National Geographic, Protected Planet, Conservation International.</p>
+        </footer>
+    </main>
 
 </body>
 </html>
