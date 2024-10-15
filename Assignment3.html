@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             width: 980px;
             margin: 0 auto;
-            background-color: #e6f2ff; /* Light blue background */
+            background-color: #e6f7ff; /* Light baby blue background for the page */
             padding: 20px;
         }
         header {
@@ -56,13 +56,16 @@
             border: 1px solid #ddd;
         }
         th {
-            background-color: #b3d9ff; /* Baby blue header */
+            background-color: #add8e6; /* Baby blue for table headers */
             color: #333;
-            font-weight: bold;
+            padding: 15px;
         }
         td {
             padding: 15px;
-            color: #555;
+            background-color: #f9f9f9; /* Light background for the table rows */
+        }
+        tr:nth-child(even) td {
+            background-color: #e6f2ff; /* Alternate row color for better readability */
         }
         a {
             color: #2980B9;
@@ -71,15 +74,9 @@
         a:hover {
             text-decoration: underline;
         }
-        h2 {
-            margin-top: 40px;
-            color: #333;
-        }
     </style>
 </head>
 <body>
-
-    <!-- Name: Sedra Alkero, Student Number: 301469062 -->
 
     <header>
         <a href="index.html">Home Page</a>
@@ -133,8 +130,20 @@
         </tr>
     </table>
 
-    <h2>Find Local Distributors:</h2>
-    <img src="canada-map.png" alt="Map of Canada" width="500px">
+    <h2 style="margin-top: 40px;">Find Local Distributors:</h2>
+    <img src="canada-map.png" alt="Map of Canada" width="500px" usemap="#canada-map">
+    <map name="canada-map">
+        <area shape="rect" coords="50,50,150,150" href="https://www.example.com/distributor-alberta" alt="Alberta">
+        <area shape="rect" coords="200,50,300,150" href="https://www.example.com/distributor-ontario" alt="Ontario">
+        <area shape="rect" coords="350,50,450,150" href="https://www.example.com/distributor-bc" alt="British Columbia">
+    </map>
+
+    <!-- Footer with Name and Student Number -->
+    <footer>
+        <p style="text-align: center; margin-top: 40px; font-size: 14px; color: #555;">
+            Created by: Sedra Alkero, Student Number: 301469062
+        </p>
+    </footer>
 
 </body>
 </html>
