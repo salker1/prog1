@@ -9,34 +9,49 @@
             font-family: Arial, sans-serif;
             width: 980px;
             margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
         }
         header {
             text-align: right;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 24px;
-            color: #2E86C1;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
         }
         img {
-            width: 300px;
+            display: block;
+            margin: 0 auto;
         }
         section {
             padding: 20px;
+            text-align: center;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            font-size: 16px;
+            color: #555;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 10px;
+            padding: 15px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #f4f4f4;
         }
         a {
             color: #2980B9;
@@ -57,15 +72,17 @@
 
     <section>
         <a href="https://www.apple.com/ca/shop/buy-mac/macbook-air/13-inch-m2" target="_blank">
-            <img src="apple-logo.png" alt="Apple Logo">
+            <img src="apple-logo.png" alt="Apple Logo" width="150px">
         </a>
         <h1>MacBook Air M2 2023</h1>
     </section>
 
     <section>
-        <img src="macbook-air.jpg" alt="MacBook Air M2 2023">
-        <p>The MacBook Air M2 (2023) offers incredible performance with the new M2 chip. With an 8-core CPU, 8-core GPU, 8GB unified memory, and a 256GB SSD, this MacBook Air is perfect for both work and entertainment.</p>
-
+        <img src="macbook-air.jpg" alt="MacBook Air M2 2023" width="400px">
+        <p style="text-align: left; margin-top: 20px;">
+            The MacBook Air M2 (2023) offers incredible performance with the new M2 chip. 
+            With an 8-core CPU, 8-core GPU, 8GB unified memory, and a 256GB SSD, this MacBook Air is perfect for both work and entertainment.
+        </p>
         <ul>
             <li>8-Core CPU</li>
             <li>8-Core GPU</li>
@@ -106,13 +123,8 @@
         </tr>
     </table>
 
-    <h2>Find Local Distributors:</h2>
-    <img src="canada-map.png" usemap="#canadamap" alt="Map of Canada">
-    <map name="canadamap">
-        <area shape="rect" coords="50,50,150,150" href="https://example-distributor1.com" alt="Distributor 1">
-        <area shape="rect" coords="160,50,260,150" href="https://example-distributor2.com" alt="Distributor 2">
-        <area shape="rect" coords="270,50,370,150" href="https://example-distributor3.com" alt="Distributor 3">
-    </map>
+    <h2 style="text-align: left; margin-top: 40px;">Find Local Distributors:</h2>
+    <img src="canada-map.png" alt="Map of Canada" width="500px">
 
 </body>
 </html>
