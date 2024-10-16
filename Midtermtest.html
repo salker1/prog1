@@ -22,7 +22,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
         caption {
-            background-color: #34A853; /* Google Green */
+            background-color: #8FBC8F; /* Light Green */
             color: white;
             font-size: 20px;
             padding: 10px 0; /* Top and bottom padding */
@@ -37,15 +37,23 @@
             text-align: center;
         }
         th {
-            background-color: #4285F4; /* Google Blue */
+            background-color: #8FBC8F; /* Light Green for headers */
             color: white;
         }
-        tr:nth-child(even) {
-            background-color: #FBBC05; /* Google Yellow for even rows, soft and light */
+        tr:nth-child(4n+1) { /* Orange for first of every four rows */
+            background-color: #FFA500; 
         }
-        tr:nth-child(odd) {
-            background-color: #EA4335; /* Google Red for odd rows, vibrant yet readable */
-            color: white; /* Ensures readability against the dark background */
+        tr:nth-child(4n+2) { /* Yellow for second of every four rows */
+            background-color: #FFFF00;
+            color: black; /* Ensures readability */
+        }
+        tr:nth-child(4n+3) { /* Mint Green for third of every four rows */
+            background-color: #98FB98;
+            color: black; /* Ensures readability */
+        }
+        tr:nth-child(4n+4) { /* Brown for fourth of every four rows */
+            background-color: #A52A2A;
+            color: white; /* Ensures readability */
         }
         footer {
             font-size: 16px;
