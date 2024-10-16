@@ -12,16 +12,17 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
-            flex-direction: column; /* Aligns content vertically */
+            background-color: #f4f4f4; /* Light grey background */
+            flex-direction: column; /* Ensures vertical alignment */
         }
         table {
-            width: 80%; /* Adjust width to preference */
+            width: 60%; /* Adjust width for compact look */
             border-collapse: collapse;
-            margin-bottom: 20px; /* Space between table and footer */
+            margin-bottom: 20px; /* Provides space between table and footer */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
         caption {
-            background-color: #6A5ACD; /* Deep slate blue */
+            background-color: #1E90FF; /* Dodger Blue */
             color: white;
             font-size: 20px;
             padding: 10px 0; /* Top and bottom padding */
@@ -31,23 +32,24 @@
             border-top-right-radius: 10px;
         }
         th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
+            border: 1px solid #ddd; /* Light grey border */
+            padding: 12px 15px; /* Increased padding for better spacing */
             text-align: center;
         }
         th {
-            background-color: #9370DB; /* Medium purple */
+            background-color: #4682B4; /* Steel Blue */
             color: white;
         }
         tr:nth-child(even) {
-            background-color: #E6E6FA; /* Light lavender for even rows */
+            background-color: #B0E0E6; /* Powder Blue for even rows */
         }
         tr:nth-child(odd) {
-            background-color: #FFF0F5; /* Lavender blush for odd rows */
+            background-color: #AFEEEE; /* Pale Turquoise for odd rows */
         }
         footer {
             font-size: 16px;
             color: #666;
+            text-align: center; /* Centers footer text */
         }
     </style>
 </head>
