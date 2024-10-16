@@ -13,18 +13,20 @@
             min-height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
+            flex-direction: column; /* Aligns content vertically */
         }
         table {
-            width: 70%;
+            width: 80%; /* Adjust width to preference */
             border-collapse: collapse;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Space between table and footer */
         }
         caption {
-            background-color: #6A5ACD;
+            background-color: #6A5ACD; /* Deep slate blue */
             color: white;
-            font-size: 1.2em;
-            padding: 12px;
+            font-size: 20px;
+            padding: 10px 0; /* Top and bottom padding */
             text-align: center;
+            width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -34,71 +36,82 @@
             text-align: center;
         }
         th {
-            background-color: #9370DB;
+            background-color: #9370DB; /* Medium purple */
             color: white;
         }
-        .altrow:nth-child(odd) {
-            background-color: #EEE;
+        tr:nth-child(even) {
+            background-color: #E6E6FA; /* Light lavender for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #FFF0F5; /* Lavender blush for odd rows */
+        }
+        footer {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <table>
-        <caption><strong>Fall 2024 Mid term test #301469062 Sedra Alkero</strong></caption>
-        <tr>
-            <th colspan="6">STUDENTS MARK SHEET</th>
-        </tr>
-        <tr>
-            <th>Name</th>
-            <th>Maths</th>
-            <th>Science</th>
-            <th>English</th>
-            <th>Physics</th>
-            <th>General Knowledge</th>
-        </tr>
-        <tr>
-            <td>David</td>
-            <td>85</td>
-            <td>87</td>
-            <td>88</td>
-            <td>92</td>
-            <td>80</td>
-        </tr>
-        <tr class="altrow">
-            <td>Richard</td>
-            <td>91</td>
-            <td>81</td>
-            <td>78</td>
-            <td>71</td>
-            <td>74</td>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>81</td>
-            <td>86</td>
-            <td>88</td>
-            <td>84</td>
-            <td>92</td>
-        </tr>
-        <tr class="altrow">
-            <td>Tony</td>
-            <td>84</td>
-            <td>86</td>
-            <td>87</td>
-            <td>82</td>
-            <td>81</td>
-        </tr>
-        <tr>
-            <td>Scott</td>
-            <td>71</td>
-            <td>79</td>
-            <td>82</td>
-            <td>88</td>
-            <td>89</td>
-        </tr>
+        <caption>Fall 2024 Mid term test #301469062 Sedra Alkero</caption>
+        <thead>
+            <tr>
+                <th colspan="6">STUDENTS MARK SHEET</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Physics</th>
+                <th>General Knowledge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Richard</td>
+                <td>91</td>
+                <td>81</td>
+                <td>78</td>
+                <td>71</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>81</td>
+                <td>86</td>
+                <td>88</td>
+                <td>84</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Tony</td>
+                <td>84</td>
+                <td>86</td>
+                <td>87</td>
+                <td>82</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>71</td>
+                <td>79</td>
+                <td>82</td>
+                <td>88</td>
+                <td>89</td>
+            </tr>
+        </tbody>
     </table>
     <footer>
-        <p>© Copyright 301469062 Sedra Alkero - COMP213 - Fall 2024</p>
+        © Copyright 301469062 Sedra Alkero - COMP213 - Fall 2024
     </footer>
 </body>
 </html>
