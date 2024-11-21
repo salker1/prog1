@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Evaluation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca">
+            <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="College Logo" style="width:100px;">
+        </a>
+    </header>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Continuing Education Course/Instructor Evaluation</legend>
+            
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="courseCode">
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+                <option value="spring">Spring/Summer</option>
+            </select>
+
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year">
+
+            <label for="instructor">Instructor:</label>
+            <input type="text" id="instructor" name="instructor">
+
+            <!-- Instructor Rating Questions -->
+            <div class="question">
+                <p>1. Knowledge of subject?</p>
+                <input type="radio" id="knowledgeExcellent" name="knowledge" value="excellent"><label for="knowledgeExcellent">Excellent</label>
+                <input type="radio" id="knowledgeGood" name="knowledge" value="good"><label for="knowledgeGood">Good</label>
+                <input type="radio" id="knowledgeFair" name="knowledge" value="fair"><label for="knowledgeFair">Fair</label>
+                <input type="radio" id="knowledgePoor" name="knowledge" value="unsatisfactory"><label for="knowledgePoor">Not Satisfactory</label>
+            </div>
+            <div class="question">
+                <p>2. Helpfulness?</p>
+                <input type="radio" id="helpfulnessExcellent" name="helpfulness" value="excellent"><label for="helpfulnessExcellent">Excellent</label>
+                <input type="radio" id="helpfulnessGood" name="helpfulness" value="good"><label for="helpfulnessGood">Good</label>
+                <input type="radio" id="helpfulnessFair" name="helpfulness" value="fair"><label for="helpfulnessFair">Fair</label>
+                <input type="radio" id="helpfulnessPoor" name="helpfulness" value="unsatisfactory"><label for="helpfulnessPoor">Not Satisfactory</label>
+            </div>
+            <div class="question">
+                <p>3. Courtesy and respect for all students?</p>
+                <input type="radio" id="courtesyExcellent" name="courtesy" value="excellent"><label for="courtesyExcellent">Excellent</label>
+                <input type="radio" id="courtesyGood" name="courtesy" value="good"><label for="courtesyGood">Good</label>
+                <input type="radio" id="courtesyFair" name="courtesy" value="fair"><label for="courtesyFair">Fair</label>
+                <input type="radio" id="courtesyPoor" name="courtesy" value="unsatisfactory"><label for="courtesyPoor">Not Satisfactory</label>
+            </div>
+            <div class="question">
+                <p>4. Communication skills?</p>
+                <input type="radio" id="communicationExcellent" name="communication" value="excellent"><label for="communicationExcellent">Excellent</label>
+                <input type="radio" id="communicationGood" name="communication" value="good"><label for="communicationGood">Good</label>
+                <input type="radio" id="communicationFair" name="communication" value="fair"><label for="communicationFair">Fair</label>
+                <input type="radio" id="communicationPoor" name="communication" value="unsatisfactory"><label for="communicationPoor">Not Satisfactory</label>
+            </div>
+            <div class="question">
+                <p>5. Overall performance?</p>
+                <input type="radio" id="performanceExcellent" name="performance" value="excellent"><label for="performanceExcellent">Excellent</label>
+                <input type="radio" id="performanceGood" name="performance" value="good"><label for="performanceGood">Good</label>
+                <input type="radio" id="performanceFair" name="performance" value="fair"><label for="performanceFair">Fair</label>
+                <input type="radio" id="performancePoor" name="performance" value="unsatisfactory"><label for="performancePoor">Not Satisfactory</label>
+            </div>
+
+            <input type="submit" value="Submit Evaluation">
+        </fieldset>
+    </form>
+</body>
+</html>
