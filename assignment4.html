@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Evaluation Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="Centennial College Logo" class="logo">
-    </header>
-
-    <main>
+        <img src="https://www.centennialcollege.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg" alt="Centennial College Logo" class="logo">
         <h1>Centennial College</h1>
         <h2>Continuing Education Course/Instructor Evaluation</h2>
-        <p class="instructions">Please read each statement carefully and consider each one individually. Give only one answer for each question.</p>
-
-        <form action="#" method="post" class="evaluation-form">
+        <p>Please read each statement carefully and consider each one individually. Give only one answer for each question.</p>
+    </header>
+    <main>
+        <form>
             <fieldset>
                 <legend>Course Information</legend>
                 <label for="courseCode">Course Name/Code:</label>
                 <input type="text" id="courseCode" name="courseCode" placeholder="Enter your course code">
 
                 <label for="semester">Semester:</label>
-                <input type="radio" id="fall" name="semester" value="fall">
-                <label for="fall">Fall</label>
-                <input type="radio" id="winter" name="semester" value="winter">
-                <label for="winter">Winter</label>
-                <input type="radio" id="spring" name="semester" value="spring">
-                <label for="spring">Spring/Summer</label>
+                <input type="radio" id="fall" name="semester" value="Fall"><label for="fall">Fall</label>
+                <input type="radio" id="winter" name="semester" value="Winter"><label for="winter">Winter</label>
+                <input type="radio" id="spring" name="semester" value="Spring/Summer"><label for="spring">Spring/Summer</label>
 
                 <label for="year">Year:</label>
                 <input type="text" id="year" name="year" placeholder="2024">
@@ -39,6 +35,7 @@
             <fieldset>
                 <legend>Instructor</legend>
                 <p>How would you rate the instructor's:</p>
+
                 <label>1. Knowledge of subject?</label>
                 <input type="radio" name="knowledge" value="excellent"><label>Excellent</label>
                 <input type="radio" name="knowledge" value="good"><label>Good</label>
@@ -58,8 +55,7 @@
                 <input type="radio" name="courtesy" value="unsatisfactory"><label>Not Satisfactory</label>
 
                 <label>4. Communication skills?</label>
-                <input type="radio" name="communication" value="excellent
-                    "><label>Excellent</label>
+                <input type="radio" name="communication" value="excellent"><label>Excellent</label>
                 <input type="radio" name="communication" value="good"><label>Good</label>
                 <input type="radio" name="communication" value="fair"><label>Fair</label>
                 <input type="radio" name="communication" value="unsatisfactory"><label>Not Satisfactory</label>
