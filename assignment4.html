@@ -6,120 +6,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header style="text-align: center; margin-bottom: 20px;">
         <a href="https://www.centennialcollege.ca">
-            <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="College Logo">
+            <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="Centennial College Logo" style="width: 150px;">
         </a>
     </header>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Continuing Education Course/Instructor Evaluation</legend>
-            
-            <label for="courseCode">Course Code:</label>
-            <input type="text" id="courseCode" name="courseCode">
+    <div class="form-container" style="margin: auto; width: 50%; background: #2d2d2d; padding: 20px; border-radius: 10px;">
+        <form action="#" method="post">
+            <fieldset>
+                <legend style="color: white; font-size: 20px; text-align: center;">Continuing Education Course/Instructor Evaluation</legend>
+                
+                <label for="courseCode" style="color: white;">Course Code:</label>
+                <input type="text" id="courseCode" name="courseCode" style="width: 100%; margin-bottom: 10px;">
 
-            <label for="semester">Semester:</label>
-            <select id="semester" name="semester">
-                <option value="fall">Fall</option>
-                <option value="winter">Winter</option>
-                <option value="spring">Spring/Summer</option>
-            </select>
+                <label for="semester" style="color: white;">Semester:</label>
+                <select id="semester" name="semester" style="width: 100%; margin-bottom: 10px;">
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring/Summer</option>
+                </select>
 
-            <label for="year">Year:</label>
-            <input type="text" id="year" name="year">
+                <label for="year" style="color: white;">Year:</label>
+                <input type="text" id="year" name="year" style="width: 100%; margin-bottom: 10px;">
 
-            <label for="instructor">Instructor:</label>
-            <input type="text" id="instructor" name="instructor">
+                <label for="instructor" style="color: white;">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" style="width: 100%; margin-bottom: 20px;">
 
-            <div class="question">
-                <p>1. Knowledge of subject?</p>
-                <input type="radio" id="knowledgeExcellent" name="knowledge" value="excellent"><label for="knowledgeExcellent">Excellent</label>
-                <input type="radio" id="knowledgeGood" name="knowledge" value="good"><label for="knowledgeGood">Good</label>
-                <input type="radio" id="knowledgeFair" name="knowledge" value="fair"><label for="knowledgeFair">Fair</label>
-                <input type="radio" id="knowledgePoor" name="knowledge" value="unsatisfactory"><label for="knowledgePoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">1. Knowledge of subject?</p>
+                    <label><input type="radio" name="knowledge" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="knowledge" value="good"> Good</label>
+                    <label><input type="radio" name="knowledge" value="fair"> Fair</label>
+                    <label><input type="radio" name="knowledge" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>2. Helpfulness?</p>
-                <input type="radio" id="helpfulnessExcellent" name="helpfulness" value="excellent"><label for="helpfulnessExcellent">Excellent</label>
-                <input type="radio" id="helpfulnessGood" name="helpfulness" value="good"><label for="helpfulnessGood">Good</label>
-                <input type="radio" id="helpfulnessFair" name="helpfulness" value="fair"><label for="helpfulnessFair">Fair</label>
-                <input type="radio" id="helpfulnessPoor" name="helpfulness" value="unsatisfactory"><label for="helpfulnessPoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">2. Helpfulness?</p>
+                    <label><input type="radio" name="helpfulness" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="helpfulness" value="good"> Good</label>
+                    <label><input type="radio" name="helpfulness" value="fair"> Fair</label>
+                    <label><input type="radio" name="helpfulness" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>3. Courtesy and respect for all students?</p>
-                <input type="radio" id="courtesyExcellent" name="courtesy" value="excellent"><label for="courtesyExcellent">Excellent</label>
-                <input type="radio" id="courtesyGood" name="courtesy" value="good"><label for="courtesyGood">Good</label>
-                <input type="radio" id="courtesyFair" name="courtesy" value="fair"><label for="courtesyFair">Fair</label>
-                <input type="radio" id="courtesyPoor" name="courtesy" value="unsatisfactory"><label for="courtesyPoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">3. Courtesy and respect for all students?</p>
+                    <label><input type="radio" name="courtesy" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="courtesy" value="good"> Good</label>
+                    <label><input type="radio" name="courtesy" value="fair"> Fair</label>
+                    <label><input type="radio" name="courtesy" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>4. Communication skills?</p>
-                <input type="radio" id="communicationExcellent" name="communication" value="excellent"><label for="communicationExcellent">Excellent</label>
-                <input type="radio" id="communicationGood" name="communication" value="good"><label for="communicationGood">Good</label>
-                <input type="radio" id="communicationFair" name="communication" value="fair"><label for="communicationFair">Fair</label>
-                <input type="radio" id="communicationPoor" name="communication" value="unsatisfactory"><label for="communicationPoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">4. Communication skills?</p>
+                    <label><input type="radio" name="communication" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="communication" value="good"> Good</label>
+                    <label><input type="radio" name="communication" value="fair"> Fair</label>
+                    <label><input type="radio" name="communication" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>5. Overall performance?</p>
-                <input type="radio" id="performanceExcellent" name="performance" value="excellent"><label for="performanceExcellent">Excellent</label>
-                <input type="radio" id="performanceGood" name="performance" value="good"><label for="performanceGood">Good</label>
-                <input type="radio" id="performanceFair" name="performance" value="fair"><label for="performanceFair">Fair</label>
-                <input type="radio" id="performancePoor" name="performance" value="unsatisfactory"><label for="performancePoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">5. Overall performance?</p>
+                    <label><input type="radio" name="performance" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="performance" value="good"> Good</label>
+                    <label><input type="radio" name="performance" value="fair"> Fair</label>
+                    <label><input type="radio" name="performance" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>6. How would you rate the course materials?</p>
-                <input type="radio" id="materialsExcellent" name="materials" value="excellent"><label for="materialsExcellent">Excellent</label>
-                <input type="radio" id="materialsGood" name="materials" value="good"><label for="materialsGood">Good</label>
-                <input type="radio" id="materialsFair" name="materials" value="fair"><label for="materialsFair">Fair</label>
-                <input type="radio" id="materialsPoor" name="materials" value="unsatisfactory"><label for="materialsPoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">6. How would you rate the course materials?</p>
+                    <label><input type="radio" name="materials" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="materials" value="good"> Good</label>
+                    <label><input type="radio" name="materials" value="fair"> Fair</label>
+                    <label><input type="radio" name="materials" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>7. How much did this course meet your expectations?</p>
-                <input type="radio" id="expectationsExcellent" name="expectations" value="excellent"><label for="expectationsExcellent">Excellent</label>
-                <input type="radio" id="expectationsGood" name="expectations" value="good"><label for="expectationsGood">Good</label>
-                <input type="radio" id="expectationsFair" name="expectations" value="fair"><label for="expectationsFair">Fair</label>
-                <input type="radio" id="expectationsPoor" name="expectations" value="unsatisfactory"><label for="expectationsPoor">Not Satisfactory</label>
-            </div>
+                <div class="question">
+                    <p style="color: white; font-weight: bold;">7. How much did this course meet your expectations?</p>
+                    <label><input type="radio" name="expectations" value="excellent"> Excellent</label>
+                    <label><input type="radio" name="expectations" value="good"> Good</label>
+                    <label><input type="radio" name="expectations" value="fair"> Fair</label>
+                    <label><input type="radio" name="expectations" value="unsatisfactory"> Not Satisfactory</label>
+                </div>
 
-            <div class="question">
-                <p>8. How would you rate this course (overall)?</p>
-                <input type="radio" id="overallExcellent" name="overall" value="excellent"><label for="overallExcellent">Excellent</label>
-                <input type="radio" id="overallGood" name="overall" value="good"><label for="overallGood">Good</label>
-                <input type="radio" id="overallFair" name="overall" value="fair"><label for="overallFair">Fair</label>
-                <input type="radio" id="overallPoor" name="overall" value="unsatisfactory"><label for="overallPoor">Not Satisfactory</label>
-            </div>
+                <div style="margin-top: 20px;">
+                    <label for="bestThing" style="color: white;">11. What is the best thing about this course?</label>
+                    <input type="text" id="bestThing" name="bestThing" style="width: 100%; margin-bottom: 10px;">
 
-            <div class="question">
-                <p>9. Was the course outline reviewed/explained at the beginning of your course?</p>
-                <input type="radio" id="outlineYes" name="outline" value="yes"><label for="outlineYes">Yes</label>
-                <input type="radio" id="outlineNo" name="outline" value="no"><label for="outlineNo">No</label>
-                <input type="radio" id="outlineNotSure" name="outline" value="notSure"><label for="outlineNotSure">Not Sure</label>
-            </div>
+                    <label for="improve" style="color: white;">12. How could we improve this course?</label>
+                    <input type="text" id="improve" name="improve" style="width: 100%; margin-bottom: 10px;">
 
-            <div class="question">
-                <p>10. Would you recommend this course to a friend with the same interests?</p>
-                <input type="radio" id="recommendYes" name="recommend" value="yes"><label for="recommendYes">Yes</label>
-                <input type="radio" id="recommendNo" name="recommend" value="no"><label for="recommendNo">No</label>
-            </div>
+                    <label for="comments" style="color: white;">13. Other comments:</label>
+                    <textarea id="comments" name="comments" style="width: 100%; height: 100px;"></textarea>
+                </div>
 
-            <label for="bestThing">11. What is the best thing about this course?</label>
-            <input type="text" id="bestThing" name="bestThing">
-
-            <label for="improve">12. How could we improve this course?</label>
-            <input type="text" id="improve" name="improve">
-
-            <label for="comments">13. Other comments:</label>
-            <textarea id="comments" name="comments"></textarea>
-
-            <input type="submit" value="Submit Evaluation">
-        </fieldset>
-    </form>
+                <input type="submit" value="Submit Evaluation" style="margin-top: 20px; padding: 10px 20px; background: green; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
