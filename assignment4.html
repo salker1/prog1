@@ -9,7 +9,7 @@
 <body>
     <header>
         <div id="header-logo">
-            <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="Centennial College Logo" style="width:150px; height:auto;">
+            <img src="https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/CentennialCMYK.jpg.jpeg" alt="Centennial College Logo" style="width:150px; height:auto; display:block; margin:0 auto;">
         </div>
     </header>
     <main>
@@ -45,56 +45,40 @@
                 <fieldset>
                     <legend>Instructor</legend>
                     <p>How would you rate the instructor's:</p>
-                    <label>1. Knowledge of subject?</label>
-                    <input type="radio" name="knowledge" value="Excellent"> Excellent
-                    <input type="radio" name="knowledge" value="Good"> Good
-                    <input type="radio" name="knowledge" value="Fair"> Fair
-                    <input type="radio" name="knowledge" value="Not Satisfactory"> Not Satisfactory
+                    <div class="radio-group">
+                        <label>1. Knowledge of subject?</label>
+                        <input type="radio" name="knowledge" value="Excellent"> Excellent
+                        <input type="radio" name="knowledge" value="Good"> Good
+                        <input type="radio" name="knowledge" value="Fair"> Fair
+                        <input type="radio" name="knowledge" value="Not Satisfactory"> Not Satisfactory
+                    </div>
 
-                    <label>2. Helpfulness?</label>
-                    <input type="radio" name="helpfulness" value="Excellent"> Excellent
-                    <input type="radio" name="helpfulness" value="Good"> Good
-                    <input type="radio" name="helpfulness" value="Fair"> Fair
-                    <input type="radio" name="helpfulness" value="Not Satisfactory"> Not Satisfactory
+                    <div class="radio-group">
+                        <label>2. Helpfulness?</label>
+                        <input type="radio" name="helpfulness" value="Excellent"> Excellent
+                        <input type="radio" name="helpfulness" value="Good"> Good
+                        <input type="radio" name="helpfulness" value="Fair"> Fair
+                        <input type="radio" name="helpfulness" value="Not Satisfactory"> Not Satisfactory
+                    </div>
 
-                    <label>3. Courtesy and respect for all students?</label>
-                    <input type="radio" name="courtesy" value="Excellent"> Excellent
-                    <input type="radio" name="courtesy" value="Good"> Good
-                    <input type="radio" name="courtesy" value="Fair"> Fair
-                    <input type="radio" name="courtesy" value="Not Satisfactory"> Not Satisfactory
-
-                    <label>4. Communication skills?</label>
-                    <input type="radio" name="communication" value="Excellent"> Excellent
-                    <input type="radio" name="communication" value="Good"> Good
-                    <input type="radio" name="communication" value="Fair"> Fair
-                    <input type="radio" name="communication" value="Not Satisfactory"> Not Satisfactory
-
-                    <label>5. Overall performance?</label>
-                    <input type="radio" name="performance" value="Excellent"> Excellent
-                    <input type="radio" name="performance" value="Good"> Good
-                    <input type="radio" name="performance" value="Fair"> Fair
-                    <input type="radio" name="performance" value="Not Satisfactory"> Not Satisfactory
+                    <div class="radio-group">
+                        <label>3. Courtesy and respect for all students?</label>
+                        <input type="radio" name="courtesy" value="Excellent"> Excellent
+                        <input type="radio" name="courtesy" value="Good"> Good
+                        <input type="radio" name="courtesy" value="Fair"> Fair
+                        <input type="radio" name="courtesy" value="Not Satisfactory"> Not Satisfactory
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Course</legend>
-                    <label>6. How would you rate the course materials?</label>
-                    <input type="radio" name="materials" value="Excellent"> Excellent
-                    <input type="radio" name="materials" value="Good"> Good
-                    <input type="radio" name="materials" value="Fair"> Fair
-                    <input type="radio" name="materials" value="Not Satisfactory"> Not Satisfactory
-
-                    <label>7. How much did this course meet your expectations?</label>
-                    <input type="radio" name="expectations" value="Excellent"> Excellent
-                    <input type="radio" name="expectations" value="Good"> Good
-                    <input type="radio" name="expectations" value="Fair"> Fair
-                    <input type="radio" name="expectations" value="Not Satisfactory"> Not Satisfactory
-
-                    <label>8. How would you rate this course (overall)?</label>
-                    <input type="radio" name="overallCourse" value="Excellent"> Excellent
-                    <input type="radio" name="overallCourse" value="Good"> Good
-                    <input type="radio" name="overallCourse" value="Fair"> Fair
-                    <input type="radio" name="overallCourse" value="Not Satisfactory"> Not Satisfactory
+                    <div class="radio-group">
+                        <label>6. How would you rate the course materials?</label>
+                        <input type="radio" name="materials" value="Excellent"> Excellent
+                        <input type="radio" name="materials" value="Good"> Good
+                        <input type="radio" name="materials" value="Fair"> Fair
+                        <input type="radio" name="materials" value="Not Satisfactory"> Not Satisfactory
+                    </div>
                 </fieldset>
 
                 <fieldset>
@@ -103,17 +87,10 @@
                     <input type="radio" name="outline" value="Yes"> Yes
                     <input type="radio" name="outline" value="No"> No
                     <input type="radio" name="outline" value="Not Sure"> Not Sure
-
-                    <label>10. Would you recommend this course to a friend with the same interests?</label>
-                    <input type="radio" name="recommend" value="Yes"> Yes
-                    <input type="radio" name="recommend" value="No"> No
                 </fieldset>
 
                 <label>11. What is the best thing about this course?</label>
                 <textarea name="bestThing"></textarea>
-
-                <label>12. How could we improve this course?</label>
-                <textarea name="improve"></textarea>
 
                 <label>13. Other comments:</label>
                 <textarea name="comments"></textarea>
