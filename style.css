@@ -11,8 +11,7 @@ body {
 
 header {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: #1a1a1a;
     padding: 20px 0;
 }
@@ -31,6 +30,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
 }
 
 fieldset {
@@ -65,19 +65,23 @@ select {
 }
 
 textarea {
-    height: 100px;
+    height: 80px;
 }
 
 .question {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .question p {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input[type="radio"] {
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 input[type="submit"] {
@@ -89,6 +93,7 @@ input[type="submit"] {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    align-self: center;
 }
 
 input[type="submit"]:hover {
