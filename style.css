@@ -1,162 +1,176 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2e3e56;
-    color: #fff;
+    background-color: #1b2b3a;
+    color: #ffffff;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
     width: 90%;
     max-width: 800px;
-    background-color: #354a68;
+    margin: 20px auto;
+    background: #2c3e50;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .header-bar {
     text-align: center;
-    padding: 10px;
-    background-color: #1b2a41;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 20px 0;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
     height: auto;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #f1c40f;
-    text-align: center;
+    font-size: 2em;
+    color: #fdd835;
+    margin: 0;
 }
 
 h2 {
-    color: #f1c40f;
     text-align: center;
-}
-
-p {
-    text-align: center;
+    color: #fdd835;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .evaluation-form {
-    background-color: #3e5578;
+    background: #34495e;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .section {
+    border: 1px solid #fdd835;
+    padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid #f1c40f;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 8px;
 }
 
-legend {
-    color: #f1c40f;
+.section legend {
     font-weight: bold;
-    padding: 0 5px;
+    color: #fdd835;
+    padding: 0 10px;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
-}
-
-input[type="text"],
-input[type="number"] {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    margin: 15px 0 5px;
+    font-weight: bold;
 }
 
 .radio-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 20px;
+    margin-top: 5px;
 }
 
-.radio-group label {
+.radio-group input[type="radio"] {
     margin-right: 10px;
 }
 
-.question p {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
 textarea {
-    width: calc(100% - 20px);
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: calc(100% - 10px);
+    padding: 5px;
     margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
 }
 
-.submit-button,
-.reset-button {
-    background-color: #f1c40f;
-    color: #1b2a41;
-    border: none;
+.submit-button, .reset-button {
     padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.submit-button:hover,
-.reset-button:hover {
-    background-color: #e1b50e;
+.submit-button {
+    background-color: #26a69a;
+    color: #ffffff;
+}
+
+.reset-button {
+    background-color: #e74c3c;
+    color: #ffffff;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #fdd835;
 }
 
-footer a {
-    color: #f1c40f;
+footer p {
+    margin: 5px;
+}
+
+a {
+    color: #26a69a;
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.header-bar h1 {
-    text-align: center;
+/* Styling for alignment */
+.question {
+    margin-top: 15px;
+}
+
+.question p {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.radio-group label {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Increase logo size and improve centering of header */
+.header-bar {
+    position: relative;
+    padding: 20px;
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin: 0 auto;
-    display: block;
 }
 
 h1 {
     text-align: center;
-    font-size: 3em;
-    color: #f1c40f;
+    font-size: 2.5em;
+    margin-top: -20px;
+}
+
+h2 {
     margin-top: 0;
+}
+
+.header-bar a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
