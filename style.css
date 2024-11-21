@@ -1,140 +1,141 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2E3B55;
-    color: #ffffff;
-    line-height: 1.6;
+    background-color: #2e3e56;
+    color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    max-width: 900px;
-    margin: 2rem auto;
-    background-color: #3B4A6B;
-    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #354a68;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1D2A44;
-    padding: 1rem;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 1rem;
-}
-
-.header-bar a {
-    text-decoration: none;
-    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    background-color: #1b2a41;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .logo {
-    width: 80px;
+    width: 150px;
     height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 h1 {
-    font-size: 2rem;
-    color: #FDB515;
+    font-size: 2.5em;
+    color: #f1c40f;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #FDB515;
-    margin-top: 0;
+    color: #f1c40f;
+    text-align: center;
 }
 
 p {
-    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .evaluation-form {
-    background-color: #2E3B55;
-    padding: 1.5rem;
+    background-color: #3e5578;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section {
-    border: 2px solid #FDB515;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
+    border: 2px solid #f1c40f;
     border-radius: 10px;
+    padding: 10px;
 }
 
 legend {
-    color: #FDB515;
+    color: #f1c40f;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 label {
     display: block;
-    margin: 1rem 0 0.5rem;
-    font-weight: bold;
+    margin: 10px 0 5px;
 }
 
 input[type="text"],
-input[type="number"],
-textarea {
-    width: 100%;
-    padding: 0.5rem;
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
 }
 
 .radio-group {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.radio-group input[type="radio"] {
-    margin-right: 0.5rem;
+.radio-group label {
+    margin-right: 10px;
 }
 
-.question {
-    margin-bottom: 1.5rem;
+.question p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 .buttons {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .submit-button,
 .reset-button {
-    background-color: #FDB515;
-    color: #2E3B55;
-    padding: 0.75rem 1.5rem;
+    background-color: #f1c40f;
+    color: #1b2a41;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .submit-button:hover,
 .reset-button:hover {
-    background-color: #EAAA00;
+    background-color: #e1b50e;
 }
 
 footer {
     text-align: center;
-    padding-top: 1.5rem;
-    margin-top: 2rem;
-    border-top: 2px solid #FDB515;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
 
 footer a {
-    color: #FDB515;
+    color: #f1c40f;
     text-decoration: none;
 }
 
@@ -142,6 +143,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    margin: 0.5rem 0;
+.header-bar h1 {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #f1c40f;
+    margin-top: 0;
 }
