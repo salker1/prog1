@@ -1,46 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 header img {
-    margin-top: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
 }
 
 main {
-    background-color: #444444;
+    background-color: #1e272e;
     border-radius: 10px;
     padding: 20px;
     width: 90%;
-    max-width: 600px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+fieldset {
+    border: none;
 }
 
-label, .question p {
+legend {
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 10px 0 5px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-input[type="text"], select, textarea {
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 textarea {
@@ -51,23 +59,27 @@ textarea {
     margin-bottom: 20px;
 }
 
+.question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .question label {
+    margin-right: 20px;
     display: inline-block;
-    margin-right: 15px;
-    font-weight: normal;
 }
 
-.submit-btn {
-    background-color: #00a651;
-    color: #ffffff;
+button.submit-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
-    background-color: #008f3d;
+button.submit-btn:hover {
+    background-color: #1abc9c;
 }
