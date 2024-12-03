@@ -49,21 +49,20 @@ body {
     letter-spacing: 2px;
 }
 
-/* Navigation */
+/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
     padding: 5px 10px;
+    font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -83,7 +82,7 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     background-color: #003366;
     color: white;
