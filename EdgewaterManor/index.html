@@ -3,41 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgewater Manor - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Edgewater Manor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <img src="logo-e.jpg" alt="Edgewater Manor Logo" style="width:100px;height:60px;">
         <nav class="navbar">
-            <div class="logo">
-                <img src="logo-e.jpg" alt="Edgewater Manor Logo">
-                <span>Edgewater Manor</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="details.html">Details</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="location.html">Location</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="location.html">Location</a>
         </nav>
     </header>
 
-    <main class="home">
-        <section class="hero">
-            <img src="banner.jpg" alt="Restaurant Banner">
-            <div class="hero-text">
-                <h1>Welcome to Edgewater Manor</h1>
-                <p>Built in the 1920s as a luxurious private estate, Edgewater Manor is now a renowned fine-dining destination in Southern Ontario. Offering exceptional cuisine in a stunning lakeside setting, it’s perfect for romantic evenings, private gatherings, corporate events, or weddings.</p>
-                <a href="menu.html" class="btn">Explore Our Menu</a>
-            </div>
-        </section>
-    </main>
+    <div class="banner" style="background-image: url('banner.jpg');">
+        <h1>Welcome to Edgewater Manor</h1>
+        <p>Built in the 1920s as a luxurious private estate, Edgewater Manor is now a renowned fine-dining destination in Southern Ontario. Offering exceptional cuisine in a stunning lakeside setting, it's perfect for romantic evenings, private gatherings, corporate events, or weddings.</p>
+        <button onclick="location.href='menu.html'" style="font-size:20px;">Explore Our Menu</button>
+    </div>
 
     <footer>
-        <p>© 2024 Edgewater Manor</p>
-        <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
-        <p>COMP213 - Web Interface Design - Individual Project</p>
+        <p>Copyright © 2024 Edgewater Manor. All rights reserved. Designed by Sedra Alkero, Student ID 301469062, COMP213 - Web Interface Design - Individual Project</p>
     </footer>
 </body>
-</html>    
+</html>
