@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details - Edgewater Manor</title>
+    <title>Edgewater Manor - Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Edgewater Manor Logo">
-        </div>
-        <nav>
-            <ul>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Edgewater Manor Logo</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="details.html">Details</a></li>
@@ -23,87 +20,81 @@
         </nav>
     </header>
 
-    <!-- Details Section -->
-    <main>
-        <h1 class="section-title">Dish Details</h1>
-        <div class="details-grid">
-            <!-- Dish 1 -->
-            <div class="dish-card">
-                <img src="caesar_salad.jpg" alt="Caesar Salad">
-                <h3>Caesar Salad</h3>
+    <main class="details">
+        <h1>Dish Details</h1>
+        <div class="grid">
+            <!-- Starters -->
+            <div class="grid-item">
+                <img src="images/caesar-salad.jpg" alt="Caesar Salad">
+                <h2>Caesar Salad</h2>
                 <p>$12 - Crisp romaine lettuce, house-made dressing, parmesan, and herb croutons.</p>
             </div>
-            <!-- Dish 2 -->
-            <div class="dish-card">
-                <img src="seared_scallops.jpg" alt="Seared Scallops">
-                <h3>Seared Scallops</h3>
+            <div class="grid-item">
+                <img src="images/seared-scallops.jpg" alt="Seared Scallops">
+                <h2>Seared Scallops</h2>
                 <p>$18 - Avocado purée, lime vinaigrette, and microgreens.</p>
             </div>
-            <!-- Dish 3 -->
-            <div class="dish-card">
-                <img src="tomato_bisque.jpg" alt="Tomato Bisque">
-                <h3>Tomato Bisque</h3>
+            <div class="grid-item">
+                <img src="images/tomato-bisque.jpg" alt="Tomato Bisque">
+                <h2>Tomato Bisque</h2>
                 <p>$9 - Creamy roasted tomato soup served with a hint of basil oil.</p>
             </div>
-            <!-- Dish 4 -->
-            <div class="dish-card">
-                <img src="filet_mignon.jpg" alt="Filet Mignon">
-                <h3>Filet Mignon</h3>
+
+            <!-- Main Courses -->
+            <div class="grid-item">
+                <img src="images/filet-mignon.jpg" alt="Filet Mignon">
+                <h2>Filet Mignon</h2>
                 <p>$59 - Grilled to perfection, served with garlic mashed potatoes and seasonal vegetables.</p>
             </div>
-            <!-- Dish 5 -->
-            <div class="dish-card">
-                <img src="pan_seared_salmon.jpg" alt="Pan-Seared Salmon">
-                <h3>Pan-Seared Salmon</h3>
+            <div class="grid-item">
+                <img src="images/pan-seared-salmon.jpg" alt="Pan-Seared Salmon">
+                <h2>Pan-Seared Salmon</h2>
                 <p>$38 - Accompanied by roasted asparagus, lemon-dill sauce, and quinoa pilaf.</p>
             </div>
-            <!-- Dish 6 -->
-            <div class="dish-card">
-                <img src="breaded_veal_piccata.jpg" alt="Breaded Veal Piccata">
-                <h3>Breaded Veal Piccata</h3>
+            <div class="grid-item">
+                <img src="images/breaded-veal-piccata.jpg" alt="Breaded Veal Piccata">
+                <h2>Breaded Veal Piccata</h2>
                 <p>$49 - Grass-fed veal chops served with a Waldorf salad and tangy piccata sauce.</p>
             </div>
-            <!-- Dish 7 -->
-            <div class="dish-card">
-                <img src="lobster_ravioli.jpg" alt="Lobster Ravioli">
-                <h3>Lobster Ravioli</h3>
+            <div class="grid-item">
+                <img src="images/lobster-ravioli.jpg" alt="Lobster Ravioli">
+                <h2>Lobster Ravioli</h2>
                 <p>$42 - Homemade ravioli stuffed with lobster, topped with a creamy saffron sauce.</p>
             </div>
-            <!-- Dish 8 -->
-            <div class="dish-card">
-                <img src="margherita_pizza.jpg" alt="Margherita Pizza">
-                <h3>Margherita Pizza</h3>
+
+            <!-- Pasta & Pizza -->
+            <div class="grid-item">
+                <img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
+                <h2>Margherita Pizza</h2>
                 <p>$18 - Classic thin crust with San Marzano tomatoes, fresh mozzarella, and basil.</p>
             </div>
-            <!-- Dish 9 -->
-            <div class="dish-card">
-                <img src="fettuccine_alfredo.jpg" alt="Fettuccine Alfredo">
-                <h3>Fettuccine Alfredo</h3>
+            <div class="grid-item">
+                <img src="images/fettuccine-alfredo.jpg" alt="Fettuccine Alfredo">
+                <h2>Fettuccine Alfredo</h2>
                 <p>$22 - Creamy Alfredo sauce over fettuccine, topped with parmesan and parsley.</p>
             </div>
-            <!-- Dish 10 -->
-            <div class="dish-card">
-                <img src="creme_brulee.jpg" alt="Crème Brûlée">
-                <h3>Crème Brûlée</h3>
+
+            <!-- Desserts -->
+            <div class="grid-item">
+                <img src="images/creme-brulee.jpg" alt="Crème Brûlée">
+                <h2>Crème Brûlée</h2>
                 <p>$12 - A rich vanilla custard topped with caramelized sugar.</p>
             </div>
-            <!-- Dish 11 -->
-            <div class="dish-card">
-                <img src="chocolate_lava_cake.jpg" alt="Chocolate Lava Cake">
-                <h3>Chocolate Lava Cake</h3>
+            <div class="grid-item">
+                <img src="images/chocolate-lava-cake.jpg" alt="Chocolate Lava Cake">
+                <h2>Chocolate Lava Cake</h2>
                 <p>$14 - Decadent chocolate cake with a molten center, served with vanilla ice cream.</p>
             </div>
-            <!-- Dish 12 -->
-            <div class="dish-card">
-                <img src="cheesecake.jpg" alt="Cheesecake">
-                <h3>Cheesecake</h3>
+            <div class="grid-item">
+                <img src="images/cheesecake.jpg" alt="Cheesecake">
+                <h2>Cheesecake</h2>
                 <p>$13 - Creamy New York-style cheesecake with a seasonal fruit topping.</p>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Edgewater Manor</p>
+        <p>© 2024 Edgewater Manor</p>
         <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
         <p>COMP213 - Web Interface Design - Individual Project</p>
     </footer>
