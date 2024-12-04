@@ -1,90 +1,65 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #333;
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
 }
 
 a {
-    color: #ffd700;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.main {
+  text-align: center;
 }
 
-.navbar a {
-    margin: 0 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/banner.jpg') no-repeat center center/cover;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto 20px;
-}
-
-.btn {
-    background-color: #ffd700;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #cca600;
-}
-
-/* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #222;
-    font-size: 0.8em;
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Menu Page Styles */
-.menu-section h2 {
-    background-color: #444;
-    padding: 10px;
-    margin-top: 20px;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-.menu-section p {
-    background-color: #555;
-    padding: 10px;
-    margin-top: 10px;
+.button:hover {
+  background-color: #004c99;
 }
