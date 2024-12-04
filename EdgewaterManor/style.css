@@ -1,5 +1,7 @@
 /* General Styling */
 body {
+   /* General Styling */
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -78,4 +80,4 @@ body {
     font-size: 1rem;
     color: navy;
     margin-top: 10px;
-}
+} 
