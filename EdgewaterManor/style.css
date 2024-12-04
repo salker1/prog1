@@ -1,83 +1,135 @@
-/* General Styling */
-body {
-   /* General Styling */
+/* General body styles */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: white;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: navy;
+}
+
+/* Header styles with navigation */
+header {
+    background-color: navy;
+    color: gold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    height: 60px;
 }
 
 .navbar {
+    background-color: gold;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: burgundy;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* Banner styles */
+.banner {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer styles */
+footer {
     background-color: navy;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
-}
-
-.nav-links li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: gold;
-}
-
-/* Details Page Styling */
-.details {
-    padding: 20px;
     text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
 }
 
-.page-title {
-    font-size: 2.5rem;
-    color: burgundy;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.grid-item {
+/* General box styling for content */
+.box {
     background-color: white;
-    border: 3px solid gold;
+    border: 2px solid gold;
     border-radius: 10px;
-    padding: 15px;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.grid-item img {
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Form styling */
+form {
+    width: 300px;
+    margin: auto;
+    border: 2px solid gold;
+    padding: 20px;
+    background-color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid navy;
+}
+
+input[type="submit"] {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: burgundy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.dish-title {
-    font-size: 1.5rem;
-    color: burgundy;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.grid-item p {
-    font-size: 1rem;
+input[type="submit"]:hover {
+    background-color: gold;
     color: navy;
-    margin-top: 10px;
-} 
+}
+
+/* Map styling */
+.map {
+    border: 2px solid navy;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Text styles for headers and paragraphs */
+h1, h2, h3 {
+    color: burgundy;
+}
+
+p {
+    color: navy;
+}
+
+/* Styling for specific elements like buttons */
+button {
+    padding: 10px 20px;
+    background-color: burgundy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: gold;
+    color: navy;
+}
