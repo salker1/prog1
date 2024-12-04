@@ -1,125 +1,110 @@
-/* Resetting default browser styles */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: navy;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
 }
 
+/* Header Styles */
 header {
     background-color: navy;
     color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header img {
-    width: 100px;
-    height: 60px;
-}
-
-.navbar {
-    background-color: gold;
-    padding: 10px;
-    text-align: center;
-}
-
-.navbar a {
-    color: burgundy;
-    text-decoration: none;
     padding: 10px 20px;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 100px;  /* Logo size */
 }
 
-.navbar a:hover {
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar a:hover, .navbar a:focus {
+    background-color: darkblue;
     color: white;
 }
 
+/* Banner Styles for Home Page */
 .banner {
     background: url('banner.jpg') no-repeat center center / cover;
+    color: white;
     padding: 50px 20px;
     text-align: center;
-    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.content {
-    padding: 20px;
-    text-align: center;
-}
-
-.box {
-    border: 2px solid gold;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-}
-
+/* Footer Styles */
 footer {
     background-color: navy;
     color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
 }
 
-form {
-    margin-top: 20px;
+/* Details Page Specific Styles */
+.details-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
 }
-
-label {
-    display: block;
-    margin-bottom: 5px;
+.dish {
+    background-color: white;
+    border: 1px solid gold;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.dish:hover {
+    transform: scale(1.05);
+}
+.dish img {
     width: 100%;
-    padding: 10px;
+    height: auto;
     margin-bottom: 10px;
 }
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: burgundy;
-    color: white;
-    border: none;
-    cursor: pointer;
+.dish h2 {
+    color: darkblue;
+}
+.dish p {
+    margin-bottom: 8px;
 }
 
-input[type="submit"]:hover {
-    background-color: gold;
-    color: navy;
+/* Responsive Grid for Details Page */
+@media (max-width: 768px) {
+    .details-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-iframe {
-    width: 100%;
-    border: 2px solid navy;
-    height: 400px; /* Adjust height as per design requirements */
-}
-
-button {
-    padding: 10px 20px;
-    background-color: burgundy;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: gold;
-    color: navy;
+@media (max-width: 480px) {
+    .details-content {
+        grid-template-columns: 1fr;
+    }
 }
