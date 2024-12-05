@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <title>Contact Us - Edgewater Manor</title>
 </head>
 <body>
     <header>
@@ -20,18 +20,18 @@
         </nav>
     </header>
     <main>
-        <h1 class="contact-title">Contact Us</h1>
-        <p>If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
-        <form class="contact-form">
-            <label>Your Name: <input type="text" name="name"></label><br>
-            <label>Your Telephone: <input type="tel" name="telephone"></label><br>
-            <label>Your Email: <input type="email" name="email"></label><br>
-            <label>Message Body: <textarea name="message"></textarea></label><br>
-            <button type="submit">Submit</button>
+        <h1 class="page-title">Contact Us</h1>
+        <p class="contact-description">If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
+        <form class="contact-form" action="thank_you.html" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="telephone" placeholder="Your Telephone" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </main>
     <footer>
-        <p>© 2024 Edgewater Manor</p>
+        <p>&copy; 2024 Edgewater Manor</p>
         <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
         <p>COMP213 - Web Interface Design - Individual Project</p>
     </footer>
