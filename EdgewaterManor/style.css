@@ -1,110 +1,83 @@
-/* General Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styles */
-header {
+header, footer {
     background-color: navy;
     color: white;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header img {
-    width: 100px;  /* Logo size */
-}
 
-/* Navigation Bar Styles */
-.navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.navbar a {
+nav a {
     color: gold;
     text-decoration: none;
-    padding: 8px 16px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-}
-.navbar a:hover, .navbar a:focus {
-    background-color: darkblue;
-    color: white;
+    padding: 0.5rem 1rem;
 }
 
-/* Banner Styles for Home Page */
-.banner {
-    background: url('banner.jpg') no-repeat center center / cover;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+nav img {
+    height: 80px; /* Adjust based on your logo */
 }
 
-/* Footer Styles */
 footer {
-    background-color: navy;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* Details Page Specific Styles */
+/* Details Page Grid Layout */
 .details-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
-    align-items: start;
+    margin: auto;
 }
+
 .dish {
-    background-color: white;
-    border: 1px solid gold;
-    padding: 20px;
-    border-radius: 8px;
+    background: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 10px;
     text-align: center;
-    transition: transform 0.3s;
 }
-.dish:hover {
-    transform: scale(1.05);
-}
+
 .dish img {
-    width: 100%;
+    width: 100%; /* Responsive image size */
     height: auto;
     margin-bottom: 10px;
 }
-.dish h2 {
-    color: darkblue;
-}
-.dish p {
-    margin-bottom: 8px;
+
+/* Menu Page Box Style */
+.menu-section {
+    background: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%; /* Adjust width based on preference */
+    text-align: center;
 }
 
-/* Responsive Grid for Details Page */
+/* Hover Effects */
+.dish:hover, .menu-section:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2); /* Adds shadow on hover for interactivity */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .details-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .details-content {
+    .details-content, .menu-section {
         grid-template-columns: 1fr;
     }
-} 
+}
