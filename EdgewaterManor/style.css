@@ -153,9 +153,9 @@ header {
 
 /* Fixed Dish Image Sizes for Consistency */
 .dish-image {
-    width: 100%;
-    max-height: 200px; /* Ensuring all images have the same height */
-    object-fit: cover; /* Ensures images keep their aspect ratio while fitting within the box */
+    width: 250px; /* Fixed width for consistency */
+    height: 250px; /* Fixed height for uniform size */
+    object-fit: contain; /* Ensures the whole image is shown, keeping original aspect ratio */
     border-radius: 5px;
     cursor: pointer;
 }
