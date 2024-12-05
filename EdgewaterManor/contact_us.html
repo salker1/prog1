@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Edgewater Manor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edgewater Manor - Contact Us</title>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <img src="images/logo-e.jpg.png" alt="Edgewater Manor Logo" class="logo">
+        <nav class="nav-bar">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="menu.html">Menu</a></div>
+            <div class="nav-item"><a href="details.html">Details</a></div>
+            <div class="nav-item"><a href="contact_us.html">Contact Us</a></div>
+            <div class="nav-item"><a href="location.html">Location</a></div>
+        </nav>
     </header>
-    <nav class="navbar">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="menu.html" class="nav-link">Menu</a>
-        <a href="details.html" class="nav-link">Details</a>
-        <a href="contact_us.html" class="nav-link">Contact Us</a>
-        <a href="location.html" class="nav-link">Location</a>
-    </nav>
     <main>
-        <p>If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
-        <form action="thank_you.html" method="post">
+        <h1>Contact Us</h1>
+        <p class="contact-description">If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
+        <form action="thank_you.html" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
-            <input type="tel" name="telephone" placeholder="Your Telephone" required>
+            <input type="text" name="phone" placeholder="Your Telephone" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
         </form>
     </main>
     <footer>
