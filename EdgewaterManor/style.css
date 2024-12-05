@@ -1,214 +1,78 @@
-/* General Reset and Body Style */
 body {
+    background-color: #F5E8D0;
+    color: #FDFDFD;
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #F5E8D0; /* Ivory/Cream Background for All Pages */
-    color: #FDFDFD; /* Text in Soft White */
+    padding: 0;
 }
 
-/* Header and Navigation Bar */
 header {
-    background-color: #1E3F66; /* Cyan-Blue */
-    padding: 20px;
+    background-color: #1E3F66;
+    padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    width: 100px; /* Adjusted to fit the header perfectly */
+    width: 100px;
+    height: auto;
     margin-right: 20px;
 }
 
-.nav-bar {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 20px;
 }
 
-.nav-item {
-    padding: 10px 20px;
-    border-radius: 25px; /* Rounded box for creativity */
-    background-color: #800020; /* Rich Burgundy */
-    text-align: center;
+nav ul li {
+    background: #1E3F66;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.nav-item a {
+nav ul li a {
+    color: #FDFDFD;
     text-decoration: none;
-    color: #FDFDFD; /* Soft White */
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-.nav-item:hover {
-    background-color: #E3C85B; /* Golden Beige on Hover */
-    color: #1E3F66;
-}
-
-/* Banner Image */
 .banner {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.banner-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Adjust as necessary */
-}
-
-/* Main Content */
-main {
-    text-align: center;
-    margin: 20px;
 }
 
 h1 {
+    color: #800020;
+    text-align: center;
     font-size: 3em;
-    color: #800020; /* Rich Burgundy */
-    font-weight: bold;
+    margin: 20px 0;
 }
 
-.bordered-paragraph {
-    border: 3px solid #E3C85B; /* Golden Beige Border */
+.intro-text {
+    border: 2px solid #E3C85B;
     padding: 20px;
-    display: inline-block;
-    max-width: 800px;
-    margin: 20px auto;
-    color: #FDFDFD; /* Soft White */
-}
-
-.cta-button {
-    padding: 15px 30px;
-    background-color: #800020; /* Rich Burgundy */
-    color: #FDFDFD; /* White text */
-    border: none;
     font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin: 20px;
 }
 
-.cta-button:hover {
-    background-color: #E3C85B; /* Golden Beige Hover */
-    color: #1E3F66; /* Cyan-Blue Text on Hover */
-}
-
-/* Footer */
-footer {
-    background-color: #1E3F66; /* Cyan-Blue */
-    padding: 20px;
-    text-align: center;
-    color: #F5E8D0; /* Ivory/Cream for Text */
-}
-
-/* Menu Page - Boxes/Grids */
-.menu-box {
-    background-color: #F5E8D0; /* Ivory/Cream */
-    border: 3px solid #800020; /* Rich Burgundy Border */
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    color: #800020; /* Rich Burgundy Text */
-}
-
-.menu-title {
-    font-size: 2em;
-    color: #800020; /* Rich Burgundy */
-    font-weight: bold;
-}
-
-.menu-item {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.menu-description {
-    font-size: 1.2em;
-    color: #FDFDFD; /* White */
-}
-
-/* Details Page - Grid Layout */
-.details-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-}
-
-.details-item {
-    border: 3px solid #800020; /* Rich Burgundy Border */
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    max-width: 250px;
-    background-color: #F5E8D0;
-}
-
-.details-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.details-title {
-    font-size: 1.5em;
-    color: #800020;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.details-price, .details-description {
-    padding: 10px;
-    color: #FDFDFD;
-}
-
-/* Contact Us Page */
-.contact-form {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 500px;
-}
-
-.contact-us-header {
-    font-size: 2.5em;
-    color: #800020;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contact-form input[type="text"], .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 3px solid #E3C85B; /* Golden Beige Border */
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 15px 30px;
+.explore-button {
     background-color: #800020;
     color: #FDFDFD;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
-.contact-form button:hover {
-    background-color: #E3C85B; /* Golden Beige Hover */
-    color: #1E3F66;
-}
-
-/* Location Page */
-.location-header {
-    font-size: 2.5em;
-    color: #800020;
+footer {
+    background-color: #1E3F66;
+    padding: 20px;
+    color: #F5E8D0;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.location-content {
-    text-align: center;
-    color: #FDFDFD;
-    margin-bottom: 20px;
+    font-size: 0.8em;
 }
