@@ -50,7 +50,7 @@ header {
 .home-banner {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 700px; /* Made it larger to cover the full page */
     position: relative;
     display: flex;
     align-items: center;
@@ -59,19 +59,21 @@ header {
 }
 
 .banner-title {
-    font-size: 4em;
+    font-size: 5em; /* Increased title size */
     color: #FFD700; /* Golden Yellow */
     font-weight: bold;
     text-shadow: 2px 2px #00274C;
 }
 
 .banner-paragraph {
-    max-width: 600px;
+    max-width: 800px;
     background-color: rgba(0, 39, 76, 0.5);
-    padding: 15px;
+    padding: 20px;
     color: #F5F5DC; /* Light beige text */
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
+    font-size: 1.6em; /* Made paragraph bigger */
+    text-align: center; /* Centered paragraph text */
 }
 
 .explore-menu-btn {
@@ -116,18 +118,11 @@ header {
     border: 3px solid #7B3F00; /* Dark Burgundy border */
 }
 
-.category-title {
-    font-size: 2em;
-    color: #7B3F00; /* Dark Burgundy */
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 /* Details Page Styling */
 .details-title {
     text-align: center;
-    font-size: 3em;
-    margin: 30px 0;
+    font-size: 3.5em; /* Increased title size */
+    margin: 40px 0;
     color: #7B3F00; /* Dark Burgundy */
     font-weight: bold;
 }
@@ -145,12 +140,18 @@ header {
     border-radius: 10px;
     border: 3px solid #7B3F00; /* Dark Burgundy border */
     text-align: center;
+    transition: transform 0.3s ease; /* Transition effect for zoom */
+}
+
+.dish-box:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
 }
 
 .dish-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .dish-name {
@@ -177,7 +178,7 @@ header {
 
 .contact-paragraph {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increased size */
     margin-bottom: 30px;
     color: #7B3F00; /* Dark Burgundy */
 }
@@ -221,18 +222,19 @@ header {
 /* Location Page Styling */
 .location-title {
     text-align: center;
-    font-size: 3em;
-    margin: 30px 0;
+    font-size: 3.5em; /* Increased size */
+    margin: 40px 0;
     color: #7B3F00; /* Dark Burgundy */
     font-weight: bold;
 }
 
-.location-address {
+.location-paragraph,
+.location-address,
+.location-note {
     text-align: center;
     font-size: 1.8em;
     color: #7B3F00; /* Dark Burgundy */
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .map-container {
