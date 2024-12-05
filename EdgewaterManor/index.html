@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgewater Manor</title>
     <link rel="stylesheet" href="style.css">
+    <title>Edgewater Manor - Home</title>
+    <style>
+        .home-banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 100vh;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <img src="logo.jpg" alt="Edgewater Manor Logo" class="logo">
@@ -17,19 +25,22 @@
             <a href="location.html" class="nav-link">Location</a>
         </nav>
     </header>
-    
-    <section class="home-banner" style="background-image: url('banner.jpg');">
-        <div class="banner-content">
+
+    <section class="home-banner">
+        <div>
             <h1 class="banner-title">WELCOME TO EDGEWATER MANOR</h1>
-            <p class="banner-paragraph">Built in the 1920s as a luxurious private estate, Edgewater Manor is now a renowned fine-dining destination in Southern Ontario. Offering exceptional cuisine in a stunning lakeside setting, it's perfect for romantic evenings, private gatherings, corporate events, or weddings.</p>
-            <button class="explore-menu-btn" onclick="window.location.href='menu.html'">Explore Our Menu</button>
+            <div class="banner-paragraph">
+                Built in the 1920s as a luxurious private estate, Edgewater Manor is now a renowned fine-dining destination in Southern Ontario. Offering exceptional cuisine in a stunning lakeside setting, it's perfect for romantic evenings, private gatherings, corporate events, or weddings.
+            </div>
+            <button class="explore-menu-btn">Explore Our Menu</button>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Edgewater Manor</p>
-        <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
-        <p>COMP213 - Web Interface Design - Individual Project</p>
+        © 2024 Edgewater Manor
+        <br> Student Name: Sedra Alkero | Student ID: 301469062
+        <br> COMP213 - Web Interface Design - Individual Project
     </footer>
 </body>
+
 </html>
