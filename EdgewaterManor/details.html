@@ -3,106 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dish Details - Edgewater Manor</title>
     <link rel="stylesheet" href="style.css">
+    <title>Dish Details - Edgewater Manor</title>
 </head>
 <body>
     <header>
         <img src="logo-e.jpg.png" alt="Edgewater Manor Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="details.html">Details</a>
-            <a href="contact_us.html">Contact Us</a>
-            <a href="location.html">Location</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Dish Details</h1>
-        <div class="details-grid">
-            <!-- Caesar Salad -->
-            <div class="dish-box">
+        <h1 class="details-title">Dish Details</h1>
+        <div class="dish-grid">
+            <div class="dish-item">
                 <img src="caesar-salad.jpg" alt="Caesar Salad">
                 <h3>Caesar Salad</h3>
                 <p>Price: $12</p>
                 <p>Description: Crisp romaine lettuce, house-made dressing, parmesan, and herb croutons.</p>
             </div>
-            <!-- Seared Scallops -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="seared-scallops.jpg" alt="Seared Scallops">
                 <h3>Seared Scallops</h3>
                 <p>Price: $18</p>
                 <p>Description: Freshly seared scallops served with a citrus beurre blanc sauce.</p>
             </div>
-            <!-- Tomato Bisque -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="tomato-bisque.jpg" alt="Tomato Bisque">
                 <h3>Tomato Bisque</h3>
                 <p>Price: $9</p>
-                <p>Description: Creamy tomato bisque seasoned with fresh basil and served with a side of croutons.</p>
+                <p>Description: Creamy tomato soup with basil and a hint of garlic, served with a side of garlic toast.</p>
             </div>
-            <!-- Filet Mignon -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="filet-mignon.jpg" alt="Filet Mignon">
                 <h3>Filet Mignon</h3>
                 <p>Price: $59</p>
-                <p>Description: A tender filet mignon, grilled to perfection and served with a peppercorn sauce.</p>
+                <p>Description: A perfectly grilled 8oz filet, served with mashed potatoes, seasonal vegetables, and red wine reduction.</p>
             </div>
-            <!-- Pan-Seared Salmon -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="pan-seared-salmon.jpg" alt="Pan-Seared Salmon">
                 <h3>Pan-Seared Salmon</h3>
                 <p>Price: $38</p>
-                <p>Description: Pan-seared salmon fillet with a dill and lemon butter sauce.</p>
+                <p>Description: Fresh Atlantic salmon seared to perfection, served with lemon-dill butter sauce, wild rice, and asparagus.</p>
             </div>
-            <!-- Breaded Veal Piccata -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="breaded-veal-piccata.jpg" alt="Breaded Veal Piccata">
                 <h3>Breaded Veal Piccata</h3>
                 <p>Price: $49</p>
-                <p>Description: Lightly breaded veal, sautéed and topped with a caper lemon sauce.</p>
+                <p>Description: Tender veal cutlets lightly breaded, served with a white wine caper sauce and linguine pasta.</p>
             </div>
-            <!-- Lobster Ravioli -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="lobster-ravioli.jpg" alt="Lobster Ravioli">
                 <h3>Lobster Ravioli</h3>
                 <p>Price: $42</p>
-                <p>Description: Handmade ravioli filled with lobster and served with a rich tomato cream sauce.</p>
+                <p>Description: Hand-made ravioli stuffed with lobster, served in a light cream sauce with fresh herbs.</p>
             </div>
-            <!-- Margherita Pizza -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="margherita-pizza.jpg" alt="Margherita Pizza">
                 <h3>Margherita Pizza</h3>
                 <p>Price: $18</p>
-                <p>Description: Classic Margherita pizza with fresh mozzarella and basil on a homemade sauce.</p>
+                <p>Description: Classic Margherita pizza with fresh mozzarella, tomatoes, basil, and olive oil.</p>
             </div>
-            <!-- Fettuccine Alfredo -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="fettuccine-alfredo.jpg" alt="Fettuccine Alfredo">
                 <h3>Fettuccine Alfredo</h3>
                 <p>Price: $22</p>
-                <p>Description: Fettuccine tossed in a creamy Alfredo sauce with parmesan cheese.</p>
+                <p>Description: Freshly made fettuccine pasta in a rich, creamy Alfredo sauce, garnished with parmesan cheese.</p>
             </div>
-            <!-- Crème Brûlée -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="creme-brulee.jpg" alt="Crème Brûlée">
                 <h3>Crème Brûlée</h3>
                 <p>Price: $12</p>
-                <p>Description: Classic French dessert with a rich custard base topped with a contrasting layer of hard caramel.</p>
+                <p>Description: A rich vanilla custard topped with a crispy caramelized sugar crust.</p>
             </div>
-            <!-- Chocolate Lava Cake -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="chocolate-lava-cake.jpg" alt="Chocolate Lava Cake">
                 <h3>Chocolate Lava Cake</h3>
                 <p>Price: $14</p>
-                <p>Description: Molten chocolate cake with a core of rich, flowing chocolate.</p>
+                <p>Description: Decadent chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
             </div>
-            <!-- Cheesecake -->
-            <div class="dish-box">
+            <div class="dish-item">
                 <img src="cheesecake.jpg" alt="Cheesecake">
                 <h3>Cheesecake</h3>
                 <p>Price: $13</p>
-                <p>Description: Smooth and creamy cheesecake on a graham cracker crust.</p>
+                <p>Description: Creamy New York-style cheesecake served with a raspberry coulis and fresh berries.</p>
             </div>
         </div>
     </main>
