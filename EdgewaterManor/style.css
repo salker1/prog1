@@ -230,7 +230,7 @@ header {
 .contact-info {
     text-align: center;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.6em; /* Same size as body text */
     color: #7B3F00; /* Dark Burgundy */
     font-weight: bold;
 }
