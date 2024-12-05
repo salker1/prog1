@@ -1,239 +1,214 @@
-/* General styles for all pages */
+/* General Reset and Body Style */
 body {
-    font-family: 'Arial, sans-serif';
-    background-color: #F5E8D0; /* Ivory/Cream */
-    color: #FDFDFD; /* Soft White */
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5E8D0; /* Ivory/Cream Background for All Pages */
+    color: #FDFDFD; /* Text in Soft White */
 }
 
-/* Header styles */
+/* Header and Navigation Bar */
 header {
     background-color: #1E3F66; /* Cyan-Blue */
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    width: 80px;
-    height: auto;
-    margin-left: 10px;
+    width: 100px; /* Adjusted to fit the header perfectly */
+    margin-right: 20px;
 }
 
-/* Navigation Bar styles */
 .nav-bar {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-item {
-    background-color: #1E3F66; /* Cyan-Blue */
-    padding: 10px 15px;
-    border-radius: 12px;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded box for creativity */
+    background-color: #800020; /* Rich Burgundy */
+    text-align: center;
 }
 
 .nav-item a {
     text-decoration: none;
     color: #FDFDFD; /* Soft White */
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .nav-item:hover {
-    background-color: #E3C85B; /* Golden Beige */
+    background-color: #E3C85B; /* Golden Beige on Hover */
+    color: #1E3F66;
 }
 
-.nav-item a:hover {
-    color: #1E3F66; /* Cyan-Blue */
-}
-
-/* Footer styles */
-footer {
-    background-color: #1E3F66; /* Cyan-Blue */
-    padding: 10px;
+/* Banner Image */
+.banner {
     text-align: center;
-    color: #F5E8D0; /* Ivory/Cream */
+    margin-top: 20px;
 }
 
-/* Home page banner image */
 .banner-image {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0;
+    max-height: 400px; /* Adjust as necessary */
 }
 
-/* Main content styles */
+/* Main Content */
+main {
+    text-align: center;
+    margin: 20px;
+}
+
 h1 {
+    font-size: 3em;
     color: #800020; /* Rich Burgundy */
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
+    font-weight: bold;
 }
 
-h2 {
-    color: #800020; /* Rich Burgundy */
-    font-size: 2rem;
-    margin: 10px 0;
-    text-align: center;
-}
-
-/* Paragraph styling */
-p {
+.bordered-paragraph {
+    border: 3px solid #E3C85B; /* Golden Beige Border */
+    padding: 20px;
+    display: inline-block;
+    max-width: 800px;
+    margin: 20px auto;
     color: #FDFDFD; /* Soft White */
-    text-align: center;
 }
 
-/* Button styles */
 .cta-button {
-    background-color: #800020; /* Rich Burgundy */
-    color: #FDFDFD; /* Soft White */
-    border: none;
     padding: 15px 30px;
-    font-size: 1rem;
-    border-radius: 8px;
+    background-color: #800020; /* Rich Burgundy */
+    color: #FDFDFD; /* White text */
+    border: none;
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #E3C85B; /* Golden Beige */
-    color: #1E3F66; /* Cyan-Blue */
+    background-color: #E3C85B; /* Golden Beige Hover */
+    color: #1E3F66; /* Cyan-Blue Text on Hover */
 }
 
-/* Grid layout for details page */
-.details-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.detail-item {
+/* Footer */
+footer {
     background-color: #1E3F66; /* Cyan-Blue */
     padding: 20px;
-    border-radius: 10px;
-    color: #FDFDFD; /* Soft White */
     text-align: center;
+    color: #F5E8D0; /* Ivory/Cream for Text */
 }
 
-.detail-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Contact form styling */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #1E3F66; /* Cyan-Blue */
-    border-radius: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 2px solid #E3C85B; /* Golden Beige */
-    font-size: 1rem;
-}
-
-.contact-form button {
-    width: 50%;
-    background-color: #800020; /* Rich Burgundy */
-    color: #FDFDFD; /* Soft White */
-    border: none;
-    padding: 15px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contact-description {
-    color: #800020; /* Rich Burgundy */
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Map styling */
-.map-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.map-container img {
-    width: 80%;
-    height: auto;
-    border: 2px solid #E3C85B; /* Golden Beige */
-}
-
-/* Menu page styles */
-.menu-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.menu-category {
-    margin-bottom: 20px;
-    padding: 20px;
+/* Menu Page - Boxes/Grids */
+.menu-box {
+    background-color: #F5E8D0; /* Ivory/Cream */
+    border: 3px solid #800020; /* Rich Burgundy Border */
     border-radius: 15px;
-    border: 3px solid #800020; /* Rich Burgundy */
-    background-color: #1E3F66; /* Cyan-Blue */
-    color: #FDFDFD; /* Soft White */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    color: #800020; /* Rich Burgundy Text */
 }
 
-.menu-category h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+.menu-title {
+    font-size: 2em;
     color: #800020; /* Rich Burgundy */
-    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .menu-item {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.menu-item span {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-/* Thank you page styles */
-main {
-    text-align: center;
-    margin-top: 50px;
+.menu-description {
+    font-size: 1.2em;
+    color: #FDFDFD; /* White */
 }
 
-main p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+/* Details Page - Grid Layout */
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
-button {
-    margin-top: 20px;
-    padding: 15px 25px;
-    border: none;
+.details-item {
+    border: 3px solid #800020; /* Rich Burgundy Border */
     border-radius: 10px;
-    background-color: #800020; /* Rich Burgundy */
-    color: #FDFDFD; /* Soft White */
-    font-size: 1.2rem;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    background-color: #F5E8D0;
+}
+
+.details-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.details-title {
+    font-size: 1.5em;
+    color: #800020;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.details-price, .details-description {
+    padding: 10px;
+    color: #FDFDFD;
+}
+
+/* Contact Us Page */
+.contact-form {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.contact-us-header {
+    font-size: 2.5em;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #E3C85B; /* Golden Beige Border */
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #800020;
+    color: #FDFDFD;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #E3C85B; /* Golden Beige */
-    color: #1E3F66; /* Cyan-Blue */
+.contact-form button:hover {
+    background-color: #E3C85B; /* Golden Beige Hover */
+    color: #1E3F66;
+}
+
+/* Location Page */
+.location-header {
+    font-size: 2.5em;
+    color: #800020;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.location-content {
+    text-align: center;
+    color: #FDFDFD;
+    margin-bottom: 20px;
 }
