@@ -1,103 +1,260 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    color: navy;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Light beige */
+    color: #7B3F00; /* Dark Burgundy color for body text */
+    line-height: 1.6;
 }
 
+/* Header and Navigation Bar */
 header {
-    background-color: navy;
-    color: white;
-    padding: 10px;
+    background-color: #00274C; /* Dark navy blue */
+    padding: 10px 0;
+    position: relative;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo {
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
 
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+.nav-bar {
+    text-align: right;
+    padding-right: 50px;
 }
 
-.nav-links a {
+.nav-link {
+    color: #FFFFFF;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-/* Home Page Styles */
-.home h1 {
-    font-size: 48px;
-    text-align: center;
-    color: burgundy;
-    margin-top: 50px;
-}
-
-.home p {
-    text-align: center;
-    font-size: 20px;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.home .btn {
-    display: block;
-    text-align: center;
-    background-color: gold;
-    color: navy;
-    font-weight: bold;
+    font-size: 1.2em;
     padding: 10px 20px;
-    text-decoration: none;
-    margin: 20px auto;
-    max-width: 200px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #7B3F00; /* Highlight link when hovered */
+    color: #F5F5DC; /* Light beige text */
     border-radius: 5px;
 }
 
-/* Details Page */
-.details h1 {
-    font-size: 36px;
+/* Home Banner Styling */
+.home-banner {
+    background-size: cover;
+    background-position: center;
+    height: 700px; /* Made it larger to cover the full page */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    color: burgundy;
 }
 
-.grid {
+.banner-title {
+    font-size: 5em; /* Increased title size */
+    color: #FFD700; /* Golden Yellow */
+    font-weight: bold;
+    text-shadow: 2px 2px #00274C;
+}
+
+.banner-paragraph {
+    max-width: 800px;
+    background-color: rgba(0, 39, 76, 0.5);
+    padding: 20px;
+    color: #F5F5DC; /* Light beige text */
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 1.6em; /* Made paragraph bigger */
+    text-align: center; /* Centered paragraph text */
+}
+
+.explore-menu-btn {
+    background-color: #B22222; /* Firebrick Red */
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+.explore-menu-btn:hover {
+    background-color: #FFD700;
+    color: #00274C;
+}
+
+/* Menu Page Styling */
+.menu-title {
+    text-align: center;
+    font-size: 3em;
+    margin: 30px 0;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-category {
+    width: 90%;
+    max-width: 800px;
+    background-color: #FFF8DC;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #7B3F00; /* Dark Burgundy border */
+}
+
+/* Details Page Styling */
+.details-title {
+    text-align: center;
+    font-size: 3.5em; /* Increased title size */
+    margin: 40px 0;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+.details-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-.grid-item {
-    text-align: center;
-    border: 2px solid gold;
+.dish-box {
+    background-color: #FFF8DC;
+    padding: 20px;
     border-radius: 10px;
-    padding: 10px;
-    background-color: white;
+    border: 3px solid #7B3F00; /* Dark Burgundy border */
+    text-align: center;
+    transition: transform 0.3s ease; /* Transition effect for zoom */
 }
 
-.grid-item img {
+.dish-box:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.dish-image {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.grid-item h2 {
-    color: burgundy;
+.dish-name {
+    font-size: 1.5em;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
     margin: 10px 0;
-    font-size: 20px;
 }
 
-.grid-item p {
-    font-size: 16px;
-    color: navy;
+.dish-price,
+.dish-description {
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+/* Contact Us Page Styling */
+.contact-title {
+    text-align: center;
+    font-size: 3em;
+    margin: 30px 0;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+.contact-paragraph {
+    text-align: center;
+    font-size: 1.8em; /* Increased size */
+    margin-bottom: 30px;
+    color: #7B3F00; /* Dark Burgundy */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-input,
+.form-message {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #7B3F00; /* Dark Burgundy */
+    border-radius: 5px;
+}
+
+.form-message {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: #B22222; /* Firebrick Red */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #FFD700;
+    color: #00274C;
+}
+
+/* Location Page Styling */
+.location-title {
+    text-align: center;
+    font-size: 3.5em; /* Increased size */
+    margin: 40px 0;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+.location-paragraph,
+.location-address,
+.location-note {
+    text-align: center;
+    font-size: 1.8em;
+    color: #7B3F00; /* Dark Burgundy */
+    font-weight: bold;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.google-map {
+    width: 90%;
+    height: 400px;
+    border: 3px solid #7B3F00; /* Dark Burgundy border */
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #00274C; /* Dark navy blue */
+    color: #F5F5DC; /* Light beige */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
