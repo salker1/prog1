@@ -16,7 +16,7 @@ body {
 /* Header and Navigation Bar */
 header {
     background-color: #00274C; /* Dark navy blue */
-    padding: 10px 0;
+    padding: 20px 0; /* Adjusted padding to make the border thicker */
     position: relative;
     border-bottom: 10px solid #7B3F00; /* Adding border for logo fit */
 }
@@ -24,8 +24,9 @@ header {
 .logo {
     width: 70px;
     position: absolute;
-    top: 10px;
+    top: 50%; /* Adjusted to vertically center within the header */
     left: 20px;
+    transform: translateY(-50%); /* Ensures the logo is centered vertically */
 }
 
 .nav-bar {
@@ -51,7 +52,7 @@ header {
 .home-banner {
     background: url('banner.jpg') no-repeat center center;
     background-size: cover; /* Cover full page except borders */
-    height: 700px;
+    height: calc(100vh - 70px - 20px - 10px); /* Calculating height to ensure full screen */
     position: relative;
     display: flex;
     align-items: center;
@@ -59,12 +60,15 @@ header {
     text-align: center;
 }
 
+/* Home Banner Title */
 .banner-title {
     font-size: 5em; /* Increased title size */
     color: #FFD700; /* Golden Yellow */
     font-weight: bold;
+    text-shadow: 2px 2px #00274C; /* Adding slight shadow to the text */
 }
 
+/* Paragraph Styling */
 .banner-paragraph {
     max-width: 800px;
     background-color: rgba(0, 39, 76, 0.5);
@@ -78,9 +82,13 @@ header {
 
 /* Adjusting position for the paragraph under title */
 .banner-content {
-    margin-top: -100px; /* Shifting the paragraph down for centering */
+    margin-top: 0; /* Remove margin adjustment, no need to shift */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Explore Menu Button */
 .explore-menu-btn {
     background-color: #B22222; /* Firebrick Red */
     color: #FFFFFF;
@@ -264,31 +272,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-}
-
-
-.thank-you-section {
-    text-align: center;
-    padding: 50px;
-    margin-top: 20px;
-}
-
-.thank-you-title {
-    font-size: 3.5em;
-    color: #FFD700; /* Golden Yellow, same as the banner title */
-    font-weight: bold;
-    text-shadow: 2px 2px #00274C; /* Dark shadow to match banner title */
-    margin-bottom: 30px;
-}
-
-.thank-you-paragraph {
-    font-size: 1.8em;
-    color: #7B3F00; /* Dark Burgundy, matching text styles */
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background-color: rgba(0, 39, 76, 0.1); /* Soft blue background like other highlights */
-    border-radius: 10px;
 }
