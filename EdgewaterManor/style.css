@@ -1,57 +1,63 @@
-/* Global Styles */
-body, html {
-    font-family: 'Arial', sans-serif;
-    background-color: #F5E8D0; /* Ivory/Cream */
-    color: #FDFDFD; /* Soft White */
+/* Overall Body and Document Settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5E8D0; /* Ivory/Cream background */
+    color: #FDFDFD; /* Soft White text */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
-header, footer {
+/* Header and Navigation Bar */
+header {
     background-color: #1E3F66; /* Cyan-Blue */
-    color: #F5E8D0; /* Ivory/Cream */
-    padding: 1rem;
+    color: #FDFDFD; /* Soft White */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #1E3F66; /* Cyan-Blue */
+    padding: 10px 0;
     text-align: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 nav a {
-    color: #FDFDFD;
-    font-size: 1.2em;
+    color: #FDFDFD; /* Soft White */
+    margin: 0 15px;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    font-size: 20px;
 }
 
 nav a:hover {
-    background-color: #E3C85B; /* Golden Beige */
-    color: #1E3F66; /* Cyan-Blue */
+    color: #E3C85B; /* Golden Beige */
 }
 
+/* Footer */
 footer {
-    font-size: 0.8em;
+    background-color: #1E3F66; /* Cyan-Blue */
+    color: #F5E8D0; /* Ivory/Cream */
+    text-align: center;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid #E3C85B; /* Golden Beige */
 }
 
-h1, h2 {
-    color: #800020; /* Rich Burgundy */
+/* Main Content Styles */
+h1, h2, h3, p {
+    text-align: center;
 }
 
+/* Buttons and Call-to-Actions */
 button {
     background-color: #800020; /* Rich Burgundy */
-    color: #FDFDFD;
+    color: #FDFDFD; /* Soft White */
     border: none;
     padding: 10px 20px;
+    margin: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -59,21 +65,10 @@ button:hover {
     color: #1E3F66; /* Cyan-Blue */
 }
 
-/* Content alignment */
-.content {
-    text-align: center;
-    padding: 20px;
-}
-
-.menu-item, .dish {
-    background: #FDFDFD; /* Soft White */
+/* Box and Grid Styles for Menu and Details Pages */
+.box {
     border: 2px solid #E3C85B; /* Golden Beige */
-    padding: 10px;
     margin: 10px;
+    padding: 20px;
     border-radius: 10px;
-}
-
-/* Decorative Elements */
-.decorative-border {
-    border-top: 3px solid #E3C85B;
 }
