@@ -1,50 +1,68 @@
-/* General Styles */
-body {
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
+/* Header and Footer Styles */
 header, footer {
     background-color: navy;
     color: white;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
-
 nav a {
     color: gold;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
-
 nav img {
-    height: 80px; /* Adjust based on your logo */
+    height: 60px;
 }
-
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
+/* Banner Styles for Home Page */
+.banner {
+    background: url('home-background.jpg') no-repeat center center / cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1, p {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
 /* Details Page Grid Layout */
 .details-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     margin: auto;
 }
-
 .dish {
     background: white;
     border: 2px solid gold;
@@ -52,32 +70,28 @@ footer {
     padding: 10px;
     text-align: center;
 }
-
 .dish img {
-    width: 100%; /* Responsive image size */
+    width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    object-fit: cover;
 }
 
-/* Menu Page Box Style */
-.menu-section {
-    background: white;
-    border: 2px solid gold;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%; /* Adjust width based on preference */
+/* Contact and Location Pages */
+.contact-content, .location-content {
     text-align: center;
+    padding: 20px;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+}
+input[type="text"], input[type="email"], textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
 }
 
-/* Hover Effects */
-.dish:hover, .menu-section:hover {
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2); /* Adds shadow on hover for interactivity */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .details-content, .menu-section {
-        grid-template-columns: 1fr;
-    }
+iframe {
+    width: 100%;
+    height: 400px;
 }
