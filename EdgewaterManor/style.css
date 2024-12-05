@@ -51,12 +51,18 @@ header {
 .home-banner {
     background: url('banner.jpg') no-repeat center center;
     background-size: cover; /* Cover full page except borders */
-    height: 700px;
+    height: calc(100vh - 80px); /* Adjust height to fit almost the whole page */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin-top: 0; /* No negative margin to align correctly */
+    text-align: center; /* Center the entire content */
 }
 
 .banner-title {
@@ -66,19 +72,13 @@ header {
 }
 
 .banner-paragraph {
-    max-width: 800px;
     background-color: rgba(0, 39, 76, 0.5);
     padding: 20px;
     color: #F5F5DC; /* Light beige text */
     border-radius: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 1.6em; /* Made paragraph bigger */
     text-align: center; /* Centered paragraph text */
-}
-
-/* Adjusting position for the paragraph under title */
-.banner-content {
-    margin-top: -100px; /* Shifting the paragraph down for centering */
 }
 
 .explore-menu-btn {
