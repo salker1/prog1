@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Edgewater Manor</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <img src="logo-e.jpg.png" alt="Edgewater Manor Logo" class="logo">
@@ -20,35 +18,31 @@
         </nav>
     </header>
 
-    <main>
+    <section class="contact-section">
         <h1 class="contact-title">Contact Us</h1>
-        <p class="contact-paragraph">
-            If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.
+        <p class="contact-paragraph">If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
+        <form class="contact-form" action="thank_you.html" method="post">
+            <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+            <input type="tel" class="form-input" name="phone" placeholder="Your Telephone" required>
+            <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+            <textarea class="form-message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- New Contact Information Section -->
+    <section class="contact-info">
+        <p>Store Contact Information</p>
+        <p>Email: <a href="mailto:edgewater.manor@gmail.com">edgewater.manor@gmail.com</a></p>
+        <p>Phone: <a href="tel:9054862433">905 486 2433</a></p>
+
+        <p>Follow Us</p>
+        <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
         </p>
-
-        <section class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" class="form-input">
-            <input type="tel" name="phone" placeholder="Your Telephone" class="form-input">
-            <input type="email" name="email" placeholder="Your Email" class="form-input">
-            <textarea name="message" placeholder="Your Message" class="form-message"></textarea>
-            <button class="submit-btn">Send Message</button>
-        </section>
-
-        <section class="contact-info">
-            <h2>Store Contact Information</h2>
-            <p>Email: <strong>edgewater.manor@gmail.com</strong></p>
-            <p>Phone: <strong>905 486 2433</strong></p>
-        </section>
-
-        <section class="follow-us">
-            <h2>Follow Us</h2>
-            <ul class="social-links">
-                <li><a href="#" class="nav-link">Instagram</a></li>
-                <li><a href="#" class="nav-link">Facebook</a></li>
-                <li><a href="#" class="nav-link">Twitter</a></li>
-            </ul>
-        </section>
-    </main>
+    </section>
 
     <footer>
         <p>© 2024 Edgewater Manor</p>
@@ -56,5 +50,4 @@
         <p>COMP213 - Web Interface Design - Individual Project</p>
     </footer>
 </body>
-
-</html> 
+</html>
