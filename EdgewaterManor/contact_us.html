@@ -8,34 +8,29 @@
 </head>
 <body>
     <header>
-        <img src="logo-e.jpg.png" alt="Edgewater Manor Logo" id="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="details.html">Details</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="location.html">Location</a></li>
-            </ul>
+        <img src="logo.jpg" alt="Edgewater Manor Logo" class="logo">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="details.html" class="nav-link">Details</a>
+            <a href="contact_us.html" class="nav-link">Contact Us</a>
+            <a href="location.html" class="nav-link">Location</a>
         </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <p>If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
-        <form action="thank_you.html" method="post">
-            <label for="name">Your Name:</label> 
-            <input type="text" id="name" name="name" required>
-            <label for="phone">Your Telephone:</label>
-            <input type="text" id="phone" name="phone" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
+
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-paragraph">If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
+
+    <form action="thank_you.html" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required class="form-input">
+        <input type="text" name="telephone" placeholder="Your Telephone" required class="form-input">
+        <input type="email" name="email" placeholder="Your Email" required class="form-input">
+        <textarea name="message" placeholder="Your Message" required class="form-message"></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
     <footer>
-        <p>© 2024 Edgewater Manor</p>
+        <p>&copy; 2024 Edgewater Manor</p>
         <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
         <p>COMP213 - Web Interface Design - Individual Project</p>
     </footer>
