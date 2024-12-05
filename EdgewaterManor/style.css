@@ -18,7 +18,7 @@ header {
     background-color: #00274C; /* Dark navy blue */
     padding: 10px 0;
     position: relative;
-    border-bottom: 15px solid #7B3F00; /* Thicker border for logo to fit */
+    border-bottom: 10px solid #7B3F00; /* Border for logo fit */
 }
 
 .logo {
@@ -59,10 +59,6 @@ header {
     text-align: center;
 }
 
-.banner-content {
-    text-align: center;
-}
-
 .banner-title {
     font-size: 5em; /* Title size */
     color: #FFD700; /* Golden Yellow */
@@ -72,13 +68,13 @@ header {
 
 .banner-paragraph {
     max-width: 800px;
-    background-color: rgba(0, 39, 76, 0.5); /* Background color for highlight */
+    background-color: rgba(0, 39, 76, 0.5);
     padding: 20px;
     color: #F5F5DC; /* Light beige text */
     border-radius: 10px;
-    margin: 25px auto 0; /* Center the paragraph under the title */
+    margin-top: 20px;
     font-size: 1.6em; /* Paragraph size */
-    text-align: center;
+    text-align: center; /* Center the paragraph */
 }
 
 /* Explore Button Styling */
@@ -105,108 +101,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-}
-
-/* Styling for Contact Us Form (if needed) */
-.contact-title {
-    text-align: center;
-    font-size: 3em;
-    margin: 30px 0;
-    color: #7B3F00; /* Dark Burgundy */
-    font-weight: bold;
-}
-
-.contact-paragraph {
-    text-align: center;
-    font-size: 1.8em; /* Increased size */
-    margin-bottom: 30px;
-    color: #7B3F00; /* Dark Burgundy */
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.form-input,
-.form-message {
-    width: 80%;
-    max-width: 600px;
-    padding: 15px;
-    font-size: 1em;
-    border: 2px solid #7B3F00; /* Dark Burgundy */
-    border-radius: 5px;
-}
-
-.form-message {
-    height: 100px;
-}
-
-.submit-btn {
-    background-color: #B22222; /* Firebrick Red */
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #FFD700;
-    color: #00274C;
-}
-
-/* Thank You Page Styling */
-main {
-    text-align: center;
-    padding: 50px;
-}
-
-main h1 {
-    font-size: 3em;
-    color: #7B3F00;
-    margin-bottom: 20px;
-}
-
-main p {
-    font-size: 1.5em;
-    color: #7B3F00;
-}
-
-button {
-    background-color: #B22222; /* Firebrick Red */
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #FFD700;
-    color: #00274C;
-}
-
-/* General Box Styling */
-.dish-box {
-    width: 100%;
-    max-width: 300px;
-    background-color: #FFF8DC;
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid #7B3F00; /* Dark Burgundy border */
-    text-align: center;
-    transition: transform 0.3s ease; /* Transition effect for zoom */
-    margin: 10px auto;
-}
-
-.dish-box img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
