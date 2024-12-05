@@ -1,82 +1,239 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #800020; /* Burgundy Text */
-    background-color: #F5E8D0; /* Light Cream Background */
-    line-height: 1.6;
-}
-
-header {
-    background-color: #1E3F66; /* Cyan-Blue Background */
-    padding: 10px;
-    text-align: center;
-}
-
-header img {
-    width: 50px;
-}
-
-nav ul {
-    list-style: none;
+    font-family: 'Arial, sans-serif';
+    background-color: #F5E8D0; /* Ivory/Cream */
+    color: #800020; /* Rich Burgundy */
+    margin: 0;
     padding: 0;
 }
 
+header {
+    background-color: #1E3F66; /* Cyan-Blue */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    background: #1E3F66; /* Cyan-Blue */
+    border-radius: 20px;
+    padding: 5px 15px;
 }
 
 nav ul li a {
-    color: #FDFDFD; /* Soft White Text */
     text-decoration: none;
+    color: #FDFDFD; /* Soft White */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #E3C85B; /* Golden Beige */
+}
+
+/* Page Title Styles */
+h1 {
+    color: #800020; /* Rich Burgundy */
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
     font-weight: bold;
 }
 
-.page-title {
-    text-align: center;
-    font-size: 3em;
-    color: #800020; /* Burgundy Title */
+/* Home Page */
+.home-banner {
+    width: 100%;
+    height: 50vh;
+    background: url('banner.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #FDFDFD; /* Soft White */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.menu-section, .details-section {
-    padding: 20px;
+.home-banner h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #E3C85B; /* Highlighted in Golden Beige */
 }
 
-.menu-box, .detail-box {
-    border: 2px solid #800020; /* Burgundy Border */
-    border-radius: 10px; /* Rounded Box */
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.contact-form input, .contact-form textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
+.home-banner p {
     font-size: 1.2em;
-    border: 2px solid #CAA136; /* Golden Border */
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
 }
 
-.contact-form button {
-    background-color: #800020; /* Burgundy Button Background */
-    color: #FDFDFD; /* Soft White Text */
+.explore-button {
+    background-color: #800020; /* Rich Burgundy */
+    color: #FDFDFD; /* Soft White */
     padding: 10px 20px;
-    font-size: 1.2em;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
 }
 
-.contact-form button:hover {
-    background-color: #E3C85B; /* Golden Hover */
-    color: #1E3F66; /* Cyan-Blue Text */
+.explore-button:hover {
+    background-color: #E3C85B; /* Golden Beige */
+    color: #1E3F66; /* Cyan-Blue */
 }
 
-footer {
-    background-color: #1E3F66; /* Cyan-Blue Background */
-    color: #F5E8D0; /* Light Cream Text */
+/* Menu Page */
+.menu-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 10%;
+    border: 3px solid #800020; /* Rich Burgundy */
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #FDFDFD; /* Soft White */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+}
+
+.menu-categories .category {
+    border: 2px solid #800020; /* Rich Burgundy */
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: #FDFDFD;
+}
+
+.category-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Details Page */
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 40px 5%;
+}
+
+.dish-box {
+    border: 2px solid #800020; /* Rich Burgundy */
+    border-radius: 12px;
+    padding: 20px;
     text-align: center;
+    background-color: #FDFDFD; /* Soft White */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dish-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dish-box h2 {
+    font-size: 1.5em;
+    color: #800020; /* Rich Burgundy */
+    margin-top: 15px;
+}
+
+.dish-box p {
+    font-size: 1em;
+    color: #1E3F66; /* Cyan-Blue */
+}
+
+/* Contact Us Page */
+.contact-us-container {
+    text-align: center;
+    margin: 50px 10%;
+    font-size: 1.5em;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-us-form label {
+    font-weight: bold;
+    color: #800020; /* Rich Burgundy */
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form textarea {
+    width: 100%;
     padding: 10px;
-    position: absolute;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 2px solid #800020;
+}
+
+.contact-us-form button {
+    background-color: #800020; /* Rich Burgundy */
+    color: #FDFDFD; /* Soft White */
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-us-form button:hover {
+    background-color: #E3C85B; /* Golden Beige */
+}
+
+/* Location Page */
+.location-content {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.map-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 400px;
+    border: 2px solid #800020;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1E3F66; /* Cyan-Blue */
+    color: #F5E8D0; /* Ivory/Cream */
+    text-align: center;
+    padding: 20px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
