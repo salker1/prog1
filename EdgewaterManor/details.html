@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Details</title>
     <link rel="stylesheet" href="style.css">
-    <title>Edgewater Manor - Dish Details</title>
+    <style>
+        .details-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .detail-box {
+            border: 2px solid #800020; /* Burgundy Border */
+            padding: 20px;
+            text-align: center;
+            background-color: #F5E8D0; /* Light Cream Background */
+        }
+        .detail-box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .detail-box h4 {
+            color: #800020; /* Burgundy Title */
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .detail-box p {
+            color: #1E3F66; /* Navy Blue Text */
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo-e.jpg.png" alt="Edgewater Manor Logo" class="logo">
+        <img src="logo-e.jpg.png" alt="Edgewater Manor Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,78 +49,90 @@
     </header>
     <main>
         <h1 class="page-title">Dish Details</h1>
-        <div class="details-grid">
-            <div class="details-box">
+        <div class="details-section">
+            <!-- Caesar Salad -->
+            <div class="detail-box">
                 <img src="caesar-salad.jpg" alt="Caesar Salad">
-                <h2>Caesar Salad</h2>
+                <h4>Caesar Salad</h4>
                 <p>Price: $12</p>
                 <p>Description: Crisp romaine lettuce, house-made dressing, parmesan, and herb croutons.</p>
             </div>
-            <div class="details-box">
+            <!-- Seared Scallops -->
+            <div class="detail-box">
                 <img src="seared-scallops.jpg" alt="Seared Scallops">
-                <h2>Seared Scallops</h2>
+                <h4>Seared Scallops</h4>
                 <p>Price: $18</p>
-                <p>Description: Pan-seared scallops with lemon butter sauce and capers.</p>
+                <p>Description: Freshly seared scallops with lemon butter sauce, served over microgreens.</p>
             </div>
-            <div class="details-box">
+            <!-- Tomato Bisque -->
+            <div class="detail-box">
                 <img src="tomato-bisque.jpg" alt="Tomato Bisque">
-                <h2>Tomato Bisque</h2>
+                <h4>Tomato Bisque</h4>
                 <p>Price: $9</p>
-                <p>Description: Creamy tomato bisque with a hint of basil and garlic croutons.</p>
+                <p>Description: Creamy tomato bisque with a hint of basil, served with crispy garlic croutons.</p>
             </div>
-            <div class="details-box">
+            <!-- Filet Mignon -->
+            <div class="detail-box">
                 <img src="filet-mignon.jpg" alt="Filet Mignon">
-                <h2>Filet Mignon</h2>
+                <h4>Filet Mignon</h4>
                 <p>Price: $59</p>
-                <p>Description: 8oz beef tenderloin cooked to perfection, served with mashed potatoes and seasonal vegetables.</p>
+                <p>Description: 8 oz center-cut filet, grilled to perfection, served with garlic mashed potatoes.</p>
             </div>
-            <div class="details-box">
+            <!-- Pan-Seared Salmon -->
+            <div class="detail-box">
                 <img src="pan-seared-salmon.jpg" alt="Pan-Seared Salmon">
-                <h2>Pan-Seared Salmon</h2>
+                <h4>Pan-Seared Salmon</h4>
                 <p>Price: $38</p>
-                <p>Description: Fresh Atlantic salmon, pan-seared, served with wild rice and asparagus.</p>
+                <p>Description: Fresh Atlantic salmon seared to perfection, served with a lemon dill sauce.</p>
             </div>
-            <div class="details-box">
+            <!-- Breaded Veal Piccata -->
+            <div class="detail-box">
                 <img src="breaded-veal-piccata.jpg" alt="Breaded Veal Piccata">
-                <h2>Breaded Veal Piccata</h2>
+                <h4>Breaded Veal Piccata</h4>
                 <p>Price: $49</p>
-                <p>Description: Tender veal in lemon caper sauce, served with roasted garlic potatoes.</p>
+                <p>Description: Lightly breaded veal cutlet, topped with capers and lemon butter sauce.</p>
             </div>
-            <div class="details-box">
+            <!-- Lobster Ravioli -->
+            <div class="detail-box">
                 <img src="lobster-ravioli.jpg" alt="Lobster Ravioli">
-                <h2>Lobster Ravioli</h2>
+                <h4>Lobster Ravioli</h4>
                 <p>Price: $42</p>
-                <p>Description: Lobster-filled ravioli in a creamy tomato basil sauce.</p>
+                <p>Description: Handmade ravioli stuffed with lobster and served in a creamy tomato bisque.</p>
             </div>
-            <div class="details-box">
+            <!-- Margherita Pizza -->
+            <div class="detail-box">
                 <img src="margherita-pizza.jpg" alt="Margherita Pizza">
-                <h2>Margherita Pizza</h2>
+                <h4>Margherita Pizza</h4>
                 <p>Price: $18</p>
-                <p>Description: Classic Margherita pizza with fresh mozzarella, tomatoes, and basil.</p>
+                <p>Description: Classic margherita pizza with fresh mozzarella, basil, and a savory tomato sauce.</p>
             </div>
-            <div class="details-box">
+            <!-- Fettuccine Alfredo -->
+            <div class="detail-box">
                 <img src="fettuccine-alfredo.jpg" alt="Fettuccine Alfredo">
-                <h2>Fettuccine Alfredo</h2>
+                <h4>Fettuccine Alfredo</h4>
                 <p>Price: $22</p>
-                <p>Description: Rich and creamy Alfredo sauce with fettuccine pasta.</p>
+                <p>Description: Creamy fettuccine Alfredo with Parmesan and black pepper, served with garlic bread.</p>
             </div>
-            <div class="details-box">
+            <!-- Crème Brûlée -->
+            <div class="detail-box">
                 <img src="creme-brulee.jpg" alt="Crème Brûlée">
-                <h2>Crème Brûlée</h2>
+                <h4>Crème Brûlée</h4>
                 <p>Price: $12</p>
-                <p>Description: Classic vanilla custard with a caramelized sugar top.</p>
+                <p>Description: Rich vanilla custard topped with a layer of caramelized sugar.</p>
             </div>
-            <div class="details-box">
+            <!-- Chocolate Lava Cake -->
+            <div class="detail-box">
                 <img src="chocolate-lava-cake.jpg" alt="Chocolate Lava Cake">
-                <h2>Chocolate Lava Cake</h2>
+                <h4>Chocolate Lava Cake</h4>
                 <p>Price: $14</p>
-                <p>Description: Rich chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+                <p>Description: Molten chocolate cake with a gooey center, served with a scoop of vanilla ice cream.</p>
             </div>
-            <div class="details-box">
+            <!-- Cheesecake -->
+            <div class="detail-box">
                 <img src="cheesecake.jpg" alt="Cheesecake">
-                <h2>Cheesecake</h2>
+                <h4>Cheesecake</h4>
                 <p>Price: $13</p>
-                <p>Description: Classic New York cheesecake with a graham cracker crust and berry compote.</p>
+                <p>Description: Classic New York-style cheesecake served with a fresh berry compote.</p>
             </div>
         </div>
     </main>
@@ -101,5 +141,5 @@
         <p>Student Name: Sedra Alkero | Student ID: 301469062</p>
         <p>COMP213 - Web Interface Design - Individual Project</p>
     </footer>
-</body> 
+</body>
 </html>
