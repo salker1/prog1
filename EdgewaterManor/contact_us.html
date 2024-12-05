@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Edgewater Manor</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectToThankYouPage(event) {
+            event.preventDefault(); // Prevent the form from submitting in the default way
+            window.location.href = "thank_you.html"; // Redirect to the thank you page
+        }
+    </script>
 </head>
 
 <body>
@@ -24,8 +30,8 @@
         <h1 class="contact-title">Contact Us</h1>
         <p class="contact-paragraph">If you have any questions or would like to make a reservation, please fill out the form below or reach out to us directly.</p>
 
-        <!-- Changed the method to GET -->
-        <form action="thank_you.html" method="get" class="contact-form">
+        <!-- Add JavaScript event listener to the form -->
+        <form class="contact-form" onsubmit="redirectToThankYouPage(event)">
             <input type="text" name="name" placeholder="Your Name" class="form-input" required>
             <input type="tel" name="telephone" placeholder="Your Telephone" class="form-input" required>
             <input type="email" name="email" placeholder="Your Email" class="form-input" required>
